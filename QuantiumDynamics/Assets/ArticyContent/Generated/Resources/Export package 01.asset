@@ -1,0 +1,1148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1919818469, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: Export package 01
+  m_EditorClassIdentifier: 
+  mPackagePath: Assets/ArticyContent/Generated/Resources/Export package 01.asset
+  mResourceKey: Export package 01
+  mObjects:
+  - {fileID: 114640804816964226}
+  - {fileID: 114456437133537776}
+  - {fileID: 114835130343443080}
+  - {fileID: 114559666780700416}
+  - {fileID: 114679172229858064}
+  - {fileID: 114223350727243420}
+  - {fileID: 114050489239711042}
+  - {fileID: 114595318984322180}
+  - {fileID: 114048804984083180}
+  - {fileID: 114852859808832700}
+  - {fileID: 114963533201227078}
+  - {fileID: 114816934868981042}
+  - {fileID: 114291143208095304}
+  - {fileID: 114670459489327094}
+  - {fileID: 114997157579856044}
+  - {fileID: 114677247123736312}
+  - {fileID: 114354024137629580}
+  - {fileID: 114098609276732222}
+--- !u!114 &114048804984083180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_D69F64A7
+  m_EditorClassIdentifier: 
+  id: 72057594037928621
+  technicalName: DFr_D69F64A7
+  parentId: 72057594037928605
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Innocent, wanting to be helpful
+  mSpeaker:
+    objectRef: 72057594037928240
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: Yes, father. I like to help you test."
+  mExternalId: 
+  mPosition: {x: 950, y: 325}
+  mZIndex: 3
+  mSize: {x: 225, y: 200}
+  mShortId: 3600770215
+  mInputPins:
+    value:
+    - id: 72057594037928622
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928621
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928623
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928621
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928630
+          mTarget:
+            objectRef: 72057594037928629
+      mOwnerInstanceId: 0
+--- !u!114 &114050489239711042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_19C708AC
+  m_EditorClassIdentifier: 
+  id: 72057594037928606
+  technicalName: DFr_19C708AC
+  parentId: 72057594037928605
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Caring and soft
+  mSpeaker:
+    objectRef: 72057594037928244
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: Good morning, <color=#ffa61aff>Andy</color>.
+  mExternalId: 
+  mPosition: {x: 350, y: 325}
+  mZIndex: 0
+  mSize: {x: 225, y: 200}
+  mShortId: 432474284
+  mInputPins:
+    value:
+    - id: 72057594037928607
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928606
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928608
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928606
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928614
+          mTarget:
+            objectRef: 72057594037928613
+      mOwnerInstanceId: 0
+--- !u!114 &114098609276732222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355031d78d8a4f942ab76067f3008511, type: 3}
+  m_Name: Ntt_6C34F76A
+  m_EditorClassIdentifier: 
+  id: 72057594037928244
+  technicalName: Ntt_6C34F76A
+  parentId: 216172785005863603
+  childrenIds: 
+  mAttachments:
+    listIds: 
+  mDisplayName: Father
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: 
+  mExternalId: 
+  mPosition: {x: 20, y: 20}
+  mZIndex: 1
+  mSize: {x: 256, y: 196}
+  mPreviewImage:
+    mViewBoxX: 0
+    mViewBoxY: 0
+    mViewBoxWidth: 0
+    mViewBoxHeight: 0
+    mMode: 0
+    mAsset:
+      objectRef: 0
+  mShortId: 1815410538
+  mTemplate:
+    value:
+      mDefaultExtendedCharacterFeature:
+        value:
+          mMotivation: 
+          mInnerConflict: 
+          mSkills: 
+          mFears: 
+          mHabits: 
+          mFurtherDetails: 
+          mOwnerId: 72057594037928244
+          mOwnerInstanceId: 0
+      mDefaultBasicCharacterFeature:
+        value:
+          mAge: 40
+          mSpecies: Ntt_6C34F76A.DefaultBasicCharacterFeature.Species
+          mBornIn: 
+          mSex: 0
+          mOccupation: Ntt_6C34F76A.DefaultBasicCharacterFeature.Occupation
+          mAccent: Ntt_6C34F76A.DefaultBasicCharacterFeature.Accent
+          mPersonality: Ntt_6C34F76A.DefaultBasicCharacterFeature.Personality
+          mAppearance: 
+          mOwnerId: 72057594037928244
+          mOwnerInstanceId: 0
+      mOwnerId: 72057594037928244
+      mOwnerInstanceId: 0
+--- !u!114 &114223350727243420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558813a942b71e54ea743d169faee120, type: 3}
+  m_Name: Dlg_6F70ED08
+  m_EditorClassIdentifier: 
+  id: 72057594037929096
+  technicalName: Dlg_6F70ED08
+  parentId: 72057594037928604
+  childrenIds: 
+  mAttachments:
+    listIds: 
+  mDisplayName: Buttons/Interactables
+  mPreviewImage:
+    mViewBoxX: 0
+    mViewBoxY: 0
+    mViewBoxWidth: 0
+    mViewBoxHeight: 0
+    mMode: 0
+    mAsset:
+      objectRef: 0
+  mColor: {r: 0.5764706, g: 0.75686276, b: 0.8, a: 1}
+  mText: 
+  mExternalId: 
+  mPosition: {x: 1292, y: 100}
+  mZIndex: 14
+  mSize: {x: 291, y: 200}
+  mShortId: 1869671688
+  mInputPins:
+    value:
+    - id: 72057594037929099
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037929096
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037929100
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037929096
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.5764706, g: 0.75686276, b: 0.8, a: 1}
+          mTargetPin: 72057594037928788
+          mTarget:
+            objectRef: 72057594037928785
+      mOwnerInstanceId: 0
+--- !u!114 &114291143208095304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_3A2EBE8B
+  m_EditorClassIdentifier: 
+  id: 72057594037928798
+  technicalName: DFr_3A2EBE8B
+  parentId: 72057594037928785
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Warm, proud
+  mSpeaker:
+    objectRef: 72057594037928244
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: Very good, <color=#ffa61aff>Andy</color>. Next we're going to try manipulating
+    gravity. Focus on being on the ceiling.
+  mExternalId: 
+  mPosition: {x: 425, y: 450}
+  mZIndex: 0
+  mSize: {x: 225, y: 200}
+  mShortId: 976141963
+  mInputPins:
+    value:
+    - id: 72057594037928801
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928798
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928802
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928798
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928789
+          mTarget:
+            objectRef: 72057594037928785
+      mOwnerInstanceId: 0
+--- !u!114 &114354024137629580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355031d78d8a4f942ab76067f3008511, type: 3}
+  m_Name: Ntt_E54FBDB8
+  m_EditorClassIdentifier: 
+  id: 72057594037928240
+  technicalName: Ntt_E54FBDB8
+  parentId: 216172785005863603
+  childrenIds: 
+  mAttachments:
+    listIds: 
+  mDisplayName: Andy
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: 
+  mExternalId: 
+  mPosition: {x: 276, y: 103}
+  mZIndex: 0
+  mSize: {x: 256, y: 196}
+  mPreviewImage:
+    mViewBoxX: 0
+    mViewBoxY: 0
+    mViewBoxWidth: 0
+    mViewBoxHeight: 0
+    mMode: 0
+    mAsset:
+      objectRef: 0
+  mShortId: 3847208376
+  mTemplate:
+    value:
+      mDefaultExtendedCharacterFeature:
+        value:
+          mMotivation: Ntt_E54FBDB8.DefaultExtendedCharacterFeature.Motivation
+          mInnerConflict: Ntt_E54FBDB8.DefaultExtendedCharacterFeature.InnerConflict
+          mSkills: Ntt_E54FBDB8.DefaultExtendedCharacterFeature.Skills
+          mFears: 
+          mHabits: 
+          mFurtherDetails: 
+          mOwnerId: 72057594037928240
+          mOwnerInstanceId: 0
+      mDefaultBasicCharacterFeature:
+        value:
+          mAge: 1
+          mSpecies: Ntt_E54FBDB8.DefaultBasicCharacterFeature.Species
+          mBornIn: Ntt_E54FBDB8.DefaultBasicCharacterFeature.BornIn
+          mSex: 0
+          mOccupation: Ntt_E54FBDB8.DefaultBasicCharacterFeature.Occupation
+          mAccent: Ntt_E54FBDB8.DefaultBasicCharacterFeature.Accent
+          mPersonality: Ntt_E54FBDB8.DefaultBasicCharacterFeature.Personality
+          mAppearance: 
+          mOwnerId: 72057594037928240
+          mOwnerInstanceId: 0
+      mOwnerId: 72057594037928240
+      mOwnerInstanceId: 0
+--- !u!114 &114456437133537776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558813a942b71e54ea743d169faee120, type: 3}
+  m_Name: Dlg_9A252E6B
+  m_EditorClassIdentifier: 
+  id: 72057594037928605
+  technicalName: Dlg_9A252E6B
+  parentId: 72057594037928604
+  childrenIds: 9e02000000000001a502000000000001ad02000000000001b502000000000001
+  mAttachments:
+    listIds: 34010000000000013001000000000001
+  mDisplayName: Entry
+  mPreviewImage:
+    mViewBoxX: 0
+    mViewBoxY: 0
+    mViewBoxWidth: 0
+    mViewBoxHeight: 0
+    mMode: 0
+    mAsset:
+      objectRef: 0
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: <color=#ffa61aff>Father</color> teaches Player(<color=#ffa61aff>Andy</color>)
+    to jump through starting <color=#ffa61aff>Andy</color> off easy in a test and
+    having him jump on a box.
+  mExternalId: 
+  mPosition: {x: 592, y: 100}
+  mZIndex: 1
+  mSize: {x: 291, y: 200}
+  mShortId: 2586127979
+  mInputPins:
+    value:
+    - id: 72057594037928637
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928605
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928607
+          mTarget:
+            objectRef: 72057594037928606
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928638
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928605
+      mConnections:
+        value:
+        - mLabel: On completion of the previous task
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928660
+          mTarget:
+            objectRef: 72057594037928645
+      mOwnerInstanceId: 0
+--- !u!114 &114559666780700416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558813a942b71e54ea743d169faee120, type: 3}
+  m_Name: Dlg_5DAE2A95
+  m_EditorClassIdentifier: 
+  id: 72057594037928785
+  technicalName: Dlg_5DAE2A95
+  parentId: 72057594037928604
+  childrenIds: 5e03000000000001
+  mAttachments:
+    listIds: 
+  mDisplayName: Gravity
+  mPreviewImage:
+    mViewBoxX: 0
+    mViewBoxY: 0
+    mViewBoxWidth: 0
+    mViewBoxHeight: 0
+    mMode: 0
+    mAsset:
+      objectRef: 0
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: <color=#ffa61aff>Andy</color> learns to control gravity.
+  mExternalId: 
+  mPosition: {x: 1642, y: 100}
+  mZIndex: 11
+  mSize: {x: 291, y: 200}
+  mShortId: 1571695253
+  mInputPins:
+    value:
+    - id: 72057594037928788
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928785
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928801
+          mTarget:
+            objectRef: 72057594037928798
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928789
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928785
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928820
+          mTarget:
+            objectRef: 72057594037928817
+      mOwnerInstanceId: 0
+--- !u!114 &114595318984322180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_80DF69DD
+  m_EditorClassIdentifier: 
+  id: 72057594037928613
+  technicalName: DFr_80DF69DD
+  parentId: 72057594037928605
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Caring and soft
+  mSpeaker:
+    objectRef: 72057594037928244
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: If it's all right, we'd like to run another series of test?
+  mExternalId: 
+  mPosition: {x: 650, y: 325}
+  mZIndex: 1
+  mSize: {x: 225, y: 200}
+  mShortId: 2162125277
+  mInputPins:
+    value:
+    - id: 72057594037928614
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928613
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928615
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928613
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928622
+          mTarget:
+            objectRef: 72057594037928621
+      mOwnerInstanceId: 0
+--- !u!114 &114640804816964226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef0b7a2258e1b648b83d1f098e4e8ea, type: 3}
+  m_Name: FFr_0CABE93E
+  m_EditorClassIdentifier: 
+  id: 72057594037928604
+  technicalName: FFr_0CABE93E
+  parentId: 216172783251375095
+  childrenIds: 9d02000000000001c502000000000001510300000000000171030000000000018804000000000001
+  mAttachments:
+    listIds: 
+  mDisplayName: VertSlice
+  mPreviewImage:
+    mViewBoxX: 0
+    mViewBoxY: 0
+    mViewBoxWidth: 0
+    mViewBoxHeight: 0
+    mMode: 0
+    mAsset:
+      objectRef: 0
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: Father gives instructions to robot. Reminding him how to walk and jump to
+    get to the other side of the room.
+  mExternalId: 
+  mPosition: {x: 511.1, y: 106.8}
+  mZIndex: 0
+  mSize: {x: 275, y: 200}
+  mShortId: 212592958
+  mInputPins:
+    value:
+    - id: 72057594037928756
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928604
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928637
+          mTarget:
+            objectRef: 72057594037928605
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928757
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928604
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+--- !u!114 &114670459489327094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_290EDAEB
+  m_EditorClassIdentifier: 
+  id: 72057594037928824
+  technicalName: DFr_290EDAEB
+  parentId: 72057594037928817
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Proud
+  mSpeaker:
+    objectRef: 72057594037928244
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: That's it. Now move across and stand in front of the spinning blade on the
+    ceiling.
+  mExternalId: 
+  mPosition: {x: 425, y: 425}
+  mZIndex: 0
+  mSize: {x: 225, y: 200}
+  mShortId: 688839403
+  mInputPins:
+    value:
+    - id: 72057594037928827
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928824
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928828
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928824
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928846
+          mTarget:
+            objectRef: 72057594037928843
+      mOwnerInstanceId: 0
+--- !u!114 &114677247123736312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_65356CA0
+  m_EditorClassIdentifier: 
+  id: 72057594037928851
+  technicalName: DFr_65356CA0
+  parentId: 72057594037928817
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Gentle, caring, soft
+  mSpeaker:
+    objectRef: 72057594037928244
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: You don't need to fear things that are dangerous because they're moving.
+    You can slow them down, and with practice, even stop them entirely.
+  mExternalId: 
+  mPosition: {x: 1050, y: 425}
+  mZIndex: 3
+  mSize: {x: 225, y: 200}
+  mShortId: 1698000032
+  mInputPins:
+    value:
+    - id: 72057594037928854
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928851
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928855
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928851
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928821
+          mTarget:
+            objectRef: 72057594037928817
+      mOwnerInstanceId: 0
+--- !u!114 &114679172229858064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558813a942b71e54ea743d169faee120, type: 3}
+  m_Name: Dlg_C44F0E62
+  m_EditorClassIdentifier: 
+  id: 72057594037928817
+  technicalName: Dlg_C44F0E62
+  parentId: 72057594037928604
+  childrenIds: 78030000000000018b030000000000019303000000000001
+  mAttachments:
+    listIds: 
+  mDisplayName: FlippedGravity
+  mPreviewImage:
+    mViewBoxX: 0
+    mViewBoxY: 0
+    mViewBoxWidth: 0
+    mViewBoxHeight: 0
+    mMode: 0
+    mAsset:
+      objectRef: 0
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: <color=#ffa61aff>Andy</color> is upside-down.
+  mExternalId: 
+  mPosition: {x: 1992, y: 100}
+  mZIndex: 13
+  mSize: {x: 291, y: 200}
+  mShortId: 3293515362
+  mInputPins:
+    value:
+    - id: 72057594037928820
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928817
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928827
+          mTarget:
+            objectRef: 72057594037928824
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928821
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928817
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+--- !u!114 &114816934868981042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_87FF722C
+  m_EditorClassIdentifier: 
+  id: 72057594037928653
+  technicalName: DFr_87FF722C
+  parentId: 72057594037928645
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: 
+  mSpeaker:
+    objectRef: 72057594037928244
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: See if you can find shortest one across them.
+  mExternalId: 
+  mPosition: {x: 575, y: 300}
+  mZIndex: 1
+  mSize: {x: 225, y: 200}
+  mShortId: 2281665068
+  mInputPins:
+    value:
+    - id: 72057594037928654
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928653
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928655
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928653
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928661
+          mTarget:
+            objectRef: 72057594037928645
+      mOwnerInstanceId: 0
+--- !u!114 &114835130343443080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558813a942b71e54ea743d169faee120, type: 3}
+  m_Name: Dlg_3D9CCACC
+  m_EditorClassIdentifier: 
+  id: 72057594037928645
+  technicalName: Dlg_3D9CCACC
+  parentId: 72057594037928604
+  childrenIds: c602000000000001cd02000000000001
+  mAttachments:
+    listIds: 34010000000000013001000000000001
+  mDisplayName: DistanceTutorial
+  mPreviewImage:
+    mViewBoxX: 0
+    mViewBoxY: 0
+    mViewBoxWidth: 0
+    mViewBoxHeight: 0
+    mMode: 0
+    mAsset:
+      objectRef: 0
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: <color=#ffa61aff>Father</color> teaches <color=#ffa61aff>Andy</color> how
+    high and far they can jump.
+  mExternalId: 
+  mPosition: {x: 942, y: 100}
+  mZIndex: 3
+  mSize: {x: 291, y: 200}
+  mShortId: 1033685708
+  mInputPins:
+    value:
+    - id: 72057594037928660
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928645
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928647
+          mTarget:
+            objectRef: 72057594037928646
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928661
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928645
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.5764706, g: 0.75686276, b: 0.8, a: 1}
+          mTargetPin: 72057594037929099
+          mTarget:
+            objectRef: 72057594037929096
+      mOwnerInstanceId: 0
+--- !u!114 &114852859808832700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_6C283333
+  m_EditorClassIdentifier: 
+  id: 72057594037928629
+  technicalName: DFr_6C283333
+  parentId: 72057594037928605
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Chuckling, amused
+  mSpeaker:
+    objectRef: 72057594037928244
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: '"I know you do, <color=#ffa61aff>Andy</color>. Let''s start things off easy,
+    just head walk over and jump onto the box."'
+  mExternalId: 
+  mPosition: {x: 1250, y: 325}
+  mZIndex: 5
+  mSize: {x: 225, y: 200}
+  mShortId: 1814573875
+  mInputPins:
+    value:
+    - id: 72057594037928630
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928629
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928631
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928629
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928638
+          mTarget:
+            objectRef: 72057594037928605
+      mOwnerInstanceId: 0
+--- !u!114 &114963533201227078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_AFFBB637
+  m_EditorClassIdentifier: 
+  id: 72057594037928646
+  technicalName: DFr_AFFBB637
+  parentId: 72057594037928645
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Pleased and Proud
+  mSpeaker:
+    objectRef: 72057594037928244
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: Very good, Andy. Let's find a path across this collection of objects next.
+  mExternalId: 
+  mPosition: {x: 250, y: 300}
+  mZIndex: 0
+  mSize: {x: 225, y: 200}
+  mShortId: 2952508983
+  mInputPins:
+    value:
+    - id: 72057594037928647
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928646
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928648
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928646
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928654
+          mTarget:
+            objectRef: 72057594037928653
+      mOwnerInstanceId: 0
+--- !u!114 &114997157579856044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba6193f3295844399a75fa912cb0eb, type: 3}
+  m_Name: DFr_7C597602
+  m_EditorClassIdentifier: 
+  id: 72057594037928843
+  technicalName: DFr_7C597602
+  parentId: 72057594037928817
+  childrenIds: 
+  mMenuText: 
+  mStageDirections: Pleased, excited
+  mSpeaker:
+    objectRef: 72057594037928240
+  mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+  mText: The...spinning blade? Uh...are you sure, father?
+  mExternalId: 
+  mPosition: {x: 750, y: 425}
+  mZIndex: 1
+  mSize: {x: 225, y: 200}
+  mShortId: 2086237698
+  mInputPins:
+    value:
+    - id: 72057594037928846
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928843
+      mConnections:
+        value: []
+      mOwnerInstanceId: 0
+  mOutputPins:
+    value:
+    - id: 72057594037928847
+      mText:
+        value:
+          handlerId: 0
+          ownerId: 0
+          ownerInstanceId: 0
+          mRawScript: 
+      mOwner: 72057594037928843
+      mConnections:
+        value:
+        - mLabel: 
+          mColor: {r: 0.57758045, g: 0.7605245, b: 0.7991027, a: 1}
+          mTargetPin: 72057594037928854
+          mTarget:
+            objectRef: 72057594037928851
+      mOwnerInstanceId: 0
