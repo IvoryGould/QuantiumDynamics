@@ -164,7 +164,7 @@ MonoBehaviour:
     m_Value: 0
   exposure:
     m_OverrideState: 1
-    m_Value: 1.25
+    m_Value: 0
   multiplier:
     m_OverrideState: 1
     m_Value: 1
@@ -181,7 +181,7 @@ MonoBehaviour:
     m_Value: 0
   updatePeriod:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
     min: 0
   includeSunInBaking:
     m_OverrideState: 0
