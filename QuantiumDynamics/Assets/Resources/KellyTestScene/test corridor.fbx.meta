@@ -556,6 +556,116 @@ ModelImporter:
     4300214: pCube24
     4300216: Box1
     4300218: Box
+    6400000: Barrel
+    6400002: Barrel1
+    6400004: Box
+    6400006: Box1
+    6400008: Door
+    6400010: Door1
+    6400012: Door_wall
+    6400014: ElectricalBOx
+    6400016: Floor_Plane_01
+    6400018: Floor_Plane_010
+    6400020: Floor_Plane_011
+    6400022: Floor_Plane_012
+    6400024: Floor_Plane_013
+    6400026: Floor_Plane_014
+    6400028: Floor_Plane_015
+    6400030: Floor_Plane_016
+    6400032: Floor_Plane_017
+    6400034: Floor_Plane_018
+    6400036: Floor_Plane_019
+    6400038: Floor_Plane_02
+    6400040: Floor_Plane_020
+    6400042: Floor_Plane_021
+    6400044: Floor_Plane_022
+    6400046: Floor_Plane_023
+    6400048: Floor_Plane_024
+    6400050: Floor_Plane_025
+    6400052: Floor_Plane_026
+    6400054: Floor_Plane_027
+    6400056: Floor_Plane_028
+    6400058: Floor_Plane_029
+    6400060: Floor_Plane_03
+    6400062: Floor_Plane_030
+    6400064: Floor_Plane_031
+    6400066: Floor_Plane_032
+    6400068: Floor_Plane_033
+    6400070: Floor_Plane_034
+    6400072: Floor_Plane_035
+    6400074: Floor_Plane_036
+    6400076: Floor_Plane_037
+    6400078: Floor_Plane_038
+    6400080: Floor_Plane_039
+    6400082: Floor_Plane_04
+    6400084: Floor_Plane_040
+    6400086: Floor_Plane_041
+    6400088: Floor_Plane_042
+    6400090: Floor_Plane_043
+    6400092: Floor_Plane_044
+    6400094: Floor_Plane_045
+    6400096: Floor_Plane_046
+    6400098: Floor_Plane_047
+    6400100: Floor_Plane_048
+    6400102: Floor_Plane_049
+    6400104: Floor_Plane_05
+    6400106: Floor_Plane_050
+    6400108: Floor_Plane_051
+    6400110: Floor_Plane_052
+    6400112: Floor_Plane_053
+    6400114: Floor_Plane_054
+    6400116: Floor_Plane_055
+    6400118: Floor_Plane_056
+    6400120: Floor_Plane_057
+    6400122: Floor_Plane_058
+    6400124: Floor_Plane_059
+    6400126: Floor_Plane_06
+    6400128: Floor_Plane_060
+    6400130: Floor_Plane_061
+    6400132: Floor_Plane_062
+    6400134: Floor_Plane_063
+    6400136: Floor_Plane_07
+    6400138: Floor_Plane_08
+    6400140: Floor_Plane_09
+    6400142: pCube21
+    6400144: pCube22
+    6400146: pCube23
+    6400148: pCube24
+    6400150: pCube25
+    6400152: pCube3
+    6400154: pCube33
+    6400156: pCube34
+    6400158: pCube4
+    6400160: pCube5
+    6400162: Pipe_01
+    6400164: Pipe_Corner
+    6400166: Pipe_Corner1
+    6400168: Pipe_Corner2
+    6400170: Pipe_Large
+    6400172: Pipe_Large1
+    6400174: Pipe_Large10
+    6400176: Pipe_Large11
+    6400178: Pipe_Large12
+    6400180: Pipe_Large13
+    6400182: Pipe_Large14
+    6400184: Pipe_Large15
+    6400186: Pipe_Large16
+    6400188: Pipe_Large17
+    6400190: Pipe_Large18
+    6400192: Pipe_Large19
+    6400194: Pipe_Large2
+    6400196: Pipe_Large20
+    6400198: Pipe_Large3
+    6400200: Pipe_Large4
+    6400202: Pipe_Large5
+    6400204: Pipe_Large6
+    6400206: Pipe_Large7
+    6400208: Pipe_Large8
+    6400210: Pipe_Large9
+    6400212: Screen_large
+    6400214: Screen_Wall
+    6400216: skirtingboard
+    6400218: WallSUpport
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -590,7 +700,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
