@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     {
 
         distToGround = GetComponent<CapsuleCollider>().bounds.extents.y;
+        Time.timeScale = 1;
 
     }
 
@@ -75,55 +76,55 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (Input.GetButtonDown("TimeScale")) {
+        //if (Input.GetButtonDown("TimeScale")) {
 
-            if (!pressedOnce) {
+        //    if (!pressedOnce) {
 
-                timeToggle = !timeToggle;
+        //        timeToggle = !timeToggle;
 
-                if (timeToggle == true) {
+        //        if (timeToggle == true) {
 
-                    Time.timeScale = 0.5f;
+        //            Time.timeScale = 0.5f;
 
-                } else {
+        //        } else {
 
-                    Time.timeScale = 1;
+        //            Time.timeScale = 1;
 
-                }
+        //        }
 
-                pressedOnce = true;
-                time = Time.time;
+        //        pressedOnce = true;
+        //        time = Time.time;
 
-            }
-            if (Time.time - time < timerLength && Input.GetButtonDown("TimeScale") && pressedOnce) {
+        //    }
+        //    if (Time.time - time < timerLength && Input.GetButtonDown("TimeScale") && pressedOnce) {
 
-                stopTimeToggle = !stopTimeToggle;
+        //        stopTimeToggle = !stopTimeToggle;
 
-                if (stopTimeToggle == true) {
+        //        if (stopTimeToggle == true) {
 
-                    Time.timeScale = 0;
+        //            Time.timeScale = 0;
 
-                } else {
+        //        } else {
 
-                    Time.timeScale = 1;
+        //            Time.timeScale = 1;
 
-                }
+        //        }
 
-            }
+        //    }
 
-        }
+        //}
 
-        if (pressedOnce) {
+        //if (pressedOnce) {
 
-            if (Time.time - time > timerLength) {
+        //    if (Time.time - time > timerLength) {
 
-                pressedOnce = false;
+        //        pressedOnce = false;
 
-            }
+        //    }
 
-            time += Time.deltaTime;
+        //    time += Time.deltaTime;
 
-        }
+        //}
 
     }
 
