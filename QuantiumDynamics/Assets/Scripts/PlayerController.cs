@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
         pressedOnce = false;
         time = 0;
-        timerLength = 1;
+        timerLength = 0.5f;
 
     }
 
@@ -42,21 +42,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        float translation = Input.GetAxis("Horizontal") * speed;
-
-        translation *= Time.deltaTime;
-
-        transform.Translate(translation, 0, 0);
-
-        if (Input.GetButtonDown("Jump") && IsGrounded()) {
-
-            if (gravityToggle == false)
-                _rigidbody.AddForce(Vector3.up * 10f, ForceMode.Impulse);
-            else
-                _rigidbody.AddForce(Vector3.down * 10f, ForceMode.Impulse);
-
-        }
 
         if (Input.GetButtonDown("GravityFlip")) {
 
@@ -76,62 +61,61 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        //if (Input.GetButtonDown("TimeScale")) {
+        if (Input.GetButtonDown("TimeScale")) {
 
-        //    if (!pressedOnce) {
+            if (!pressedOnce) {
 
-        //        timeToggle = !timeToggle;
+                timeToggle = !timeToggle;
 
-        //        if (timeToggle == true) {
+                if (timeToggle == true) {
 
-        //            Time.timeScale = 0.5f;
+                    Time.timeScale = 0.2f;
 
-        //        } else {
+                } else {
 
-        //            Time.timeScale = 1;
+                    Time.timeScale = 1;
 
-        //        }
+                }
 
-        //        pressedOnce = true;
-        //        time = Time.time;
+                pressedOnce = true;
+                time = Time.time;
 
-        //    }
-        //    if (Time.time - time < timerLength && Input.GetButtonDown("TimeScale") && pressedOnce) {
+            } else {
 
-        //        stopTimeToggle = !stopTimeToggle;
+                stopTimeToggle = !stopTimeToggle;
 
-        //        if (stopTimeToggle == true) {
+                if (stopTimeToggle == true) {
 
-        //            Time.timeScale = 0;
+                    Time.timeScale = 0;
 
-        //        } else {
+                } else {
 
-        //            Time.timeScale = 1;
+                    Time.timeScale = 1;
 
-        //        }
+                }
 
-        //    }
+            }
 
-        //}
+            Debug.Log(pressedOnce + " " + timeToggle + " " + stopTimeToggle);
 
-        //if (pressedOnce) {
+        }
 
-        //    if (Time.time - time > timerLength) {
+        if (pressedOnce && !stopTimeToggle) {
 
-        //        pressedOnce = false;
+            if (Time.time - time > timerLength) {
 
-        //    }
+                pressedOnce = false;
 
-        //    time += Time.deltaTime;
+            }
 
-        //}
+        }
 
     }
 
     private void FixedUpdate()
     {
-        
-        
+
+        Movement();
 
     }
 
@@ -141,6 +125,26 @@ public class PlayerController : MonoBehaviour
             return Physics.Raycast(transform.position, Vector3.down, distToGround + 0.1f);
         else
             return Physics.Raycast(transform.position, Vector3.up, distToGround + 0.1f);
+
+    }
+
+    void Movement() {
+
+        float translation = Input.GetAxis("Horizontal") * speed;
+
+        translation *= Time.deltaTime;
+
+        transform.Translate(translation, 0, 0);
+
+        if (Input.GetButtonDown("Jump") && IsGrounded())
+        {
+
+            if (gravityToggle == false)
+                _rigidbody.AddForce(Vector3.up * 10f, ForceMode.Impulse);
+            else
+                _rigidbody.AddForce(Vector3.down * 10f, ForceMode.Impulse);
+
+        }
 
     }
 
