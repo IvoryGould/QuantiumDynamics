@@ -20,7 +20,7 @@ namespace Articy.Quantum_Dynamics.GlobalVariables
 {
     
     
-    [Articy.Unity.ArticyCodeGenerationHashAttribute(636997458236369192)]
+    [Articy.Unity.ArticyCodeGenerationHashAttribute(637001726028646076)]
     public class ArticyScriptFragments : BaseScriptFragments, ISerializationCallbackReceiver
     {
         

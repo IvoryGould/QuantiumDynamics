@@ -22,7 +22,7 @@ namespace Articy.Quantum_Dynamics
     
     
     [Serializable()]
-    [Articy.Unity.ArticyCodeGenerationHashAttribute(636997458081089736)]
+    [Articy.Unity.ArticyCodeGenerationHashAttribute(637001725839768389)]
     public class InputPin : ArticyPrimitive, IInputPin
     {
         
