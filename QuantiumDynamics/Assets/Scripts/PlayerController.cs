@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(CapsuleCollider))]
 public class PlayerController : MonoBehaviour
 {
 
@@ -15,18 +17,20 @@ public class PlayerController : MonoBehaviour
     bool timeToggle = false;
     bool stopTimeToggle = false;
 
-    private bool pressedOnce;
-    private float time;
-    private float timerLength;
+    int enumIter;
+
+    enum ABILITIES {
+
+        GravityFilp,
+        TimeSlow,
+        TimeStop
+
+    }
 
     private void Awake()
     {
 
         _rigidbody = GetComponent<Rigidbody>();
-
-        pressedOnce = false;
-        time = 0;
-        timerLength = 1;
 
     }
 
@@ -43,21 +47,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        float translation = Input.GetAxis("Horizontal") * speed;
-
-        translation *= Time.deltaTime;
-
-        transform.Translate(translation, 0, 0);
-
-        if (Input.GetButtonDown("Jump") && IsGrounded()) {
-
-            if (gravityToggle == false)
-                _rigidbody.AddForce(Vector3.up * 10f, ForceMode.Impulse);
-            else
-                _rigidbody.AddForce(Vector3.down * 10f, ForceMode.Impulse);
-
-        }
-
         if (Input.GetButtonDown("GravityFlip")) {
 
             gravityToggle = !gravityToggle;
@@ -65,73 +54,52 @@ public class PlayerController : MonoBehaviour
             if (gravityToggle == true) {
 
                 Physics.gravity = new Vector3(0, 19.62f, 0);
-                transform.Rotate(0, 180, 180, Space.Self);
+                transform.Rotate(0, 0, 180, Space.Self);
 
             } else {
 
                 Physics.gravity = new Vector3(0, -19.62f, 0);
-                transform.Rotate(0, 180, 180, Space.Self);
+                transform.Rotate(0, 0, 180, Space.Self);
 
             }
 
         }
 
-        //if (Input.GetButtonDown("TimeScale")) {
+        if (Input.GetButtonDown("TimeScaleSlow") && !stopTimeToggle) {
 
-        //    if (!pressedOnce) {
+            timeToggle = !timeToggle;
 
-        //        timeToggle = !timeToggle;
+            if (timeToggle == true)
+                Time.timeScale = 0.2f; 
+            else
+                Time.timeScale = 1;
 
-        //        if (timeToggle == true) {
+        }
 
-        //            Time.timeScale = 0.5f;
+        if (Input.GetButtonDown("TimeScaleStop")) {
 
-        //        } else {
+            stopTimeToggle = !stopTimeToggle;
+            timeToggle = false;
 
-        //            Time.timeScale = 1;
+            if (stopTimeToggle == true) 
+                Time.timeScale = 0;
+            else
+                Time.timeScale = 1;
+            
+        }
 
-        //        }
+        if (Input.GetButtonDown("AbilityBack")) {
 
-        //        pressedOnce = true;
-        //        time = Time.time;
+            
 
-        //    }
-        //    if (Time.time - time < timerLength && Input.GetButtonDown("TimeScale") && pressedOnce) {
-
-        //        stopTimeToggle = !stopTimeToggle;
-
-        //        if (stopTimeToggle == true) {
-
-        //            Time.timeScale = 0;
-
-        //        } else {
-
-        //            Time.timeScale = 1;
-
-        //        }
-
-        //    }
-
-        //}
-
-        //if (pressedOnce) {
-
-        //    if (Time.time - time > timerLength) {
-
-        //        pressedOnce = false;
-
-        //    }
-
-        //    time += Time.deltaTime;
-
-        //}
+        }
 
     }
 
     private void FixedUpdate()
     {
-        
-        
+
+        Movement();
 
     }
 
@@ -141,6 +109,35 @@ public class PlayerController : MonoBehaviour
             return Physics.Raycast(transform.position, Vector3.down, distToGround + 0.1f);
         else
             return Physics.Raycast(transform.position, Vector3.up, distToGround + 0.1f);
+
+    }
+
+    void Movement() {
+
+        float translation = Input.GetAxis("Horizontal") * speed;
+
+        translation *= Time.deltaTime;
+
+        transform.Translate(translation, 0, 0, Space.World);
+
+        if (translation > 0) {
+
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, -90, transform.eulerAngles.z);
+
+        } else if (translation < 0) {
+
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 90, transform.eulerAngles.z);
+
+        }
+
+        if (Input.GetButtonDown("Jump") && IsGrounded()) {
+
+            if (gravityToggle == false)
+                _rigidbody.AddForce(Vector3.up * 10f, ForceMode.Impulse);
+            else
+                _rigidbody.AddForce(Vector3.down * 10f, ForceMode.Impulse);
+
+        }
 
     }
 
