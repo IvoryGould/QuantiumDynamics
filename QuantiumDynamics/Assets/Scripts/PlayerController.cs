@@ -141,4 +141,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void Teleport() {
+
+
+
+    }
+
 }
