@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 898762432423065290}
   - component: {fileID: 898762432423065291}
   - component: {fileID: 4804426878438465177}
+  - component: {fileID: 395481251800561834}
   m_Layer: 0
-  m_Name: Andy_Blockout_RotateAxis
+  m_Name: PlayerController_1.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,3 +124,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityModifier: 1
+--- !u!114 &395481251800561834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898762432423096430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858309f1bb1f1bf4681183a0da8efaa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraOffset: {x: 0, y: 1.5, z: -8}
+  CameraSmoothing: 5
