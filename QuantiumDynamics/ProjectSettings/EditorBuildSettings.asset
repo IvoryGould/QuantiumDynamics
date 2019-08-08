@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Prologue.unity
+  - enabled: 0
+    path: Assets/Resources/Scenes/Prologue.unity
     guid: 90da69e79eb1eac48a0cb35ba2f84ab3
+  - enabled: 1
+    path: Assets/Resources/Scenes/Prototype.unity
+    guid: 0f49fe433a5bb9349bf28437ea218dcd
   m_configObjects: {}
