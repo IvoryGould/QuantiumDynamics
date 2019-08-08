@@ -5,12 +5,14 @@ using UnityEngine;
 public class PlayerCameraController : MonoBehaviour
 {
     private GameObject _cameraFollow;
-    public Vector3 CameraOffset;
+    public Vector3 CameraOffset, CameraRotation;
     public float CameraSmoothing;
 
     private void Start()
     {
         _cameraFollow = GameObject.Find("Main Camera");
+        _cameraFollow.SetActive(true);
+        _cameraFollow.transform.Rotate(CameraRotation);
 
         if (CameraSmoothing == 0f)
         {
