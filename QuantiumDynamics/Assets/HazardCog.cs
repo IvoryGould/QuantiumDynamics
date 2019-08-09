@@ -43,7 +43,7 @@ public class HazardCog : MonoBehaviour
             transform.Rotate(Vector3.up, RotateSpeed_slow * Time.deltaTime, Space.Self);
         }
 
-        if (Input.GetButtonDown("TimeScaleSlow") && _timeSlow == false)
+        if (Input.GetKeyDown(KeyCode.T) && _timeSlow == false)
         {
             _timeSlow = true;
             _cc.enabled = false;
@@ -51,7 +51,7 @@ public class HazardCog : MonoBehaviour
 
             Debug.Log("TimeSlow: " + _timeSlow + " | CC Enabled: " + _cc + " | MC Enabled: " + _mc);
         }
-        else if (Input.GetButtonDown("TimeScaleSlow") && _timeSlow == true)
+        else if (Input.GetKeyDown(KeyCode.T) && _timeSlow == true)
         {
             _timeSlow = false;
             _cc.enabled = true;
