@@ -9,9 +9,12 @@ public class AndyController : MonoBehaviour
 {
 
     Rigidbody _rigidbody;
-    float speed = 10.0f;
+    public float speed = 10f;
+    public float jumpForce = 7.5f;
 
     public float gravityModifier = 1;
+
+    public QuantumPhysics quantumPhysics;
 
     float distToGround;
 
@@ -21,7 +24,8 @@ public class AndyController : MonoBehaviour
 
     int enumIter;
 
-    enum ABILITIES {
+    enum ABILITIES
+    {
 
         GravityFilp,
         TimeSlow,
@@ -49,20 +53,22 @@ public class AndyController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("GravityFlip")) {
+        //Movement();
+
+        if (Input.GetButtonDown("GravityFlip") && !stopTimeToggle) {
 
             gravityToggle = !gravityToggle;
 
             if (gravityToggle == true) {
 
                 //Physics.gravity = new Vector3(0, 19.62f, 0);
-                this.gravityModifier = -1;
+                this.gravityModifier = -1 / Time.timeScale;
                 transform.Rotate(0, 0, 180, Space.Self);
 
             } else {
 
                 //Physics.gravity = new Vector3(0, -19.62f, 0);
-                this.gravityModifier = 1;
+                this.gravityModifier = 1 / Time.timeScale;
                 transform.Rotate(0, 0, 180, Space.Self);
 
             }
@@ -74,9 +80,11 @@ public class AndyController : MonoBehaviour
             timeToggle = !timeToggle;
 
             if (timeToggle == true)
-                Time.timeScale = 0.2f;
+                quantumPhysics.timeModifier = 0.2f;
+            //Time.timeScale = 0.2f;
             else
-                Time.timeScale = 1;
+                quantumPhysics.timeModifier = 1;
+                //Time.timeScale = 1;
 
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
 
@@ -87,16 +95,18 @@ public class AndyController : MonoBehaviour
             stopTimeToggle = !stopTimeToggle;
             timeToggle = false;
 
-            if (stopTimeToggle == true) 
-                Time.timeScale = 0;
+            if (stopTimeToggle == true)
+                quantumPhysics.timeModifier = 0;
+            //Time.timeScale = 0;
             else
-                Time.timeScale = 1;
-            
+                quantumPhysics.timeModifier = 1;
+                //Time.timeScale = 1;
+
         }
 
         if (Input.GetButtonDown("AbilityBack")) {
 
-            
+
 
         }
 
@@ -105,28 +115,33 @@ public class AndyController : MonoBehaviour
     private void FixedUpdate()
     {
 
-        _rigidbody.AddForce(0, gravityModifier * Physics.gravity.y, 0, ForceMode.Force);
+        //_rigidbody.AddForce(0, gravityModifier * Physics.gravity.y, 0, ForceMode.Force);
+        _rigidbody.velocity += new Vector3(0, gravityModifier * -0.25f, 0);
 
         Movement();
 
     }
 
-    bool IsGrounded() {
+    bool IsGrounded()
+    {
 
-        if(gravityToggle == false)
+        if (gravityToggle == false)
             return Physics.Raycast(transform.position, Vector3.down, distToGround + 0.1f);
         else
             return Physics.Raycast(transform.position, Vector3.up, distToGround + 0.1f);
 
     }
 
-    void Movement() {
+    void Movement()
+    {
 
         float translation = Input.GetAxis("Horizontal") * speed;
+        
+        //translation *= Time.deltaTime;
 
-        translation *= Time.deltaTime;
+        //transform.Translate(translation, 0, 0, Space.World);
+        _rigidbody.velocity = new Vector3(translation, _rigidbody.velocity.y);
 
-        transform.Translate(translation, 0, 0, Space.World);
 
         if (translation > 0) {
 
@@ -141,15 +156,16 @@ public class AndyController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded()) {
 
             if (gravityToggle == false)
-                _rigidbody.AddForce(Vector3.up * 10f, ForceMode.Impulse);
+                _rigidbody.velocity = Vector3.up * jumpForce;
             else
-                _rigidbody.AddForce(Vector3.down * 10f, ForceMode.Impulse);
+                _rigidbody.velocity = Vector3.down * jumpForce;
 
         }
 
     }
 
-    void Teleport() {
+    void Teleport()
+    {
 
 
 
