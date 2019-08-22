@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93810fc7e0ed38c47a25bd869d084a9f
+guid: d247c9ade6f15ee43bf42ac8ae149ab3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,8 +8,7 @@ ModelImporter:
     2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Gear_03
-    6400000: //RootNode
+    4300000: SM_Floor_4
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,7 +42,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

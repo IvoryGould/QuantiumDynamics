@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 93810fc7e0ed38c47a25bd869d084a9f
+guid: 1a9fc8ea4c51c48428746fba5b72c0ea
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: lambert8
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Gear_03
+    4300000: SM_Wall_Bottom_01
     6400000: //RootNode
   externalObjects: {}
   materials:

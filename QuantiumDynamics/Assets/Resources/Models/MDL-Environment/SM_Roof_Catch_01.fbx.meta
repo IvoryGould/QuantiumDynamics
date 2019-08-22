@@ -1,15 +1,25 @@
 fileFormatVersion: 2
-guid: 93810fc7e0ed38c47a25bd869d084a9f
+guid: e623493ca79c10b40818bb9857ccad64
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: SM_Roof_Catch_01
+    100004: SM_Wall_Top_01
+    100006: SM_Wall_Top_03
+    100008: transform1
+    100010: transform2
     400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Gear_03
-    6400000: //RootNode
+    400002: SM_Roof_Catch_01
+    400004: SM_Wall_Top_01
+    400006: SM_Wall_Top_03
+    400008: transform1
+    400010: transform2
+    2100000: lambert31
+    2300000: SM_Roof_Catch_01
+    3300000: SM_Roof_Catch_01
+    4300000: SM_Roof_Catch_01
+    6400000: SM_Roof_Catch_01
   externalObjects: {}
   materials:
     importMaterials: 1
