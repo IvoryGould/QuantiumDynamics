@@ -1,16 +1,34 @@
 fileFormatVersion: 2
-guid: 33fafc718452fb04896e5d4e97c3f395
+guid: 7a5dd046057fc2944b723cf0ee12aacc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Cable_B_FL_010
+    100002: Cable_B_FL_08
+    100004: Cable_B_FL_08 1
+    100006: Cable_B_FL_09
+    100008: Pipe_Corner_Outtie
+    100010: Protective_Pipes
+    100012: //RootNode
+    100014: transform10
+    100016: transform11
+    100018: transform12
+    100020: transform9
+    400000: Cable_B_FL_010
+    400002: Cable_B_FL_08
+    400004: Cable_B_FL_08 1
+    400006: Cable_B_FL_09
+    400008: Pipe_Corner_Outtie
+    400010: Protective_Pipes
+    400012: //RootNode
+    400014: transform10
+    400016: transform11
+    400018: transform12
+    400020: transform9
     2100000: lambert1
-    2100002: lambert2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Floor_02
-    6400000: //RootNode
+    2300000: Pipe_Corner_Outtie
+    3300000: Pipe_Corner_Outtie
+    4300000: Pipe_Corner_Outtie
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -44,7 +62,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 33fafc718452fb04896e5d4e97c3f395
+guid: 28107174b7388d84682c7b8a7a73a694
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Cable_B_FL_06
+    100002: //RootNode
+    400000: Cable_B_FL_06
+    400002: //RootNode
     2100000: lambert1
-    2100002: lambert2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Floor_02
-    6400000: //RootNode
+    2300000: Cable_B_FL_06
+    3300000: Cable_B_FL_06
+    4300000: Cable_B_FL_06
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -44,7 +44,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
