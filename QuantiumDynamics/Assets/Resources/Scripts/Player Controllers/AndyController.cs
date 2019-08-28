@@ -235,7 +235,7 @@ public class AndyController : MonoBehaviour
                 this.transform.position = _lineRenderer.GetPosition(1);
                 teleportToggle = false;
                 _lineRenderer.enabled = false;
-                Destroy(AndyGhost);
+                AndyGhost.GetComponent<MeshRenderer>().enabled = false;
 
             }
              

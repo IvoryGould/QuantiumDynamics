@@ -7,9 +7,15 @@ public class GhostCollision : MonoBehaviour
 
     public bool isColliding;
 
-    private void OnTriggerStay(Collider other) {
+    private void OnTriggerEnter(Collider other) {
 
         isColliding = true;
+
+    }
+
+    private void OnTriggerExit(Collider other) {
+
+        isColliding = false;
 
     }
 
