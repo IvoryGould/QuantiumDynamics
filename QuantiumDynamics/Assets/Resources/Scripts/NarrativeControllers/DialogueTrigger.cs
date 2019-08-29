@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public DialogueLines dialogueLines;
+    public DialogueClass dialogueLines;
     // Start is called before the first frame update
     void Start()
     {

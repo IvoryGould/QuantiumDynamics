@@ -5,21 +5,41 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    private Queue<string> names;
     private Queue<string> dialogueLines;
     private Queue<float> timing;
-    private TextMeshProUGUI textBox;
+    private TextMeshProUGUI[] textBoxes;
+    private TextMeshProUGUI nameBox;
+    private TextMeshProUGUI diaBox;
     private float? time;
+    private DialogueLines diaLines;
     // Start is called before the first frame update
     void Start()
     {
+        diaLines = FindObjectOfType<DialogueLines>();
+        names = new Queue<string>();
         dialogueLines = new Queue<string>();
-        if (textBox == null)
+        if (textBoxes == null)
         {
-            textBox = FindObjectOfType<TextMeshProUGUI>();
+            textBoxes = FindObjectsOfType<TextMeshProUGUI>();
+            if (textBoxes[0].name == "DialogueBox")
+            {
+                diaBox = textBoxes[0];
+                nameBox = textBoxes[1];
+            }
+            else
+            {
+                nameBox = textBoxes[0];
+                diaBox = textBoxes[1];
+            }
+
         }
         timing = new Queue<float>();
+        names.Clear();
         dialogueLines.Clear();
         time = null;
+        diaBox.text = " ";
+        nameBox.text = " ";
     }
     void Update()
     {
@@ -33,11 +53,12 @@ public class DialogueManager : MonoBehaviour
         }
         Debug.Log(time);
     }
-    public void StartDialogue (DialogueLines dialogue)
+    public void StartDialogue (DialogueClass dialogue)
     {
+        names.Clear();
         dialogueLines.Clear();
         timing.Clear();
-        foreach (string line in dialogue.dialogueLines)
+        /*foreach (string line in dialogue.dialogueLines)
         {
             dialogueLines.Enqueue(line);
         }
@@ -45,6 +66,13 @@ public class DialogueManager : MonoBehaviour
         {
             timing.Enqueue(time);
         }
+        foreach (string name in dialogue.names)
+        {
+            names.Enqueue(name);
+        }*/
+        dialogueLines = diaLines.diaLines;
+        timing = diaLines.timing;
+        names = diaLines.names;
         NextLine();
     }
     public void NextLine()
@@ -56,9 +84,11 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            string name = names.Dequeue();
             string line = dialogueLines.Dequeue();
             time = timing.Dequeue();
-            textBox.text = line;
+            diaBox.text = line;
+            nameBox.text = name;
         }
 
     }
@@ -66,6 +96,7 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("ConvEnd");
         timing.Clear();
-        textBox.text = " ";
+        nameBox.text = " ";
+        diaBox.text = " ";
     }
 }
