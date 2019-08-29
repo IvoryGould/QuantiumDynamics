@@ -5,22 +5,40 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
-public class AndyController : MonoBehaviour
-{
+[RequireComponent(typeof(LineRenderer))]
+public class AndyController : MonoBehaviour {
 
     Rigidbody _rigidbody;
+    LineRenderer _lineRenderer;
+
+    public GameObject AndyGhost;
+
     public float speed = 10f;
     public float jumpForce = 7.5f;
 
+    [Header("Jump Calcs")]
+    [Tooltip("Maximum Height the player can jump above its self")]
+    public float maxJumpHeight; 
+    [Tooltip("Gravity multiplier to be applyed to gravity after jump height is reached")]
+    public float xGravity;
+    private float intialPlayerPos;
+
     public float gravityModifier = 1;
+    public float gravity;
+    float intGravity;
 
     public QuantumPhysics quantumPhysics;
 
+    private bool calledOnce;
+
+    private bool isJumping;
+
     float distToGround;
 
-    bool gravityToggle = false;
-    bool timeToggle = false;
-    bool stopTimeToggle = false;
+    public bool gravityToggle = false;
+    public bool timeToggle = false;
+    public bool stopTimeToggle = false;
+    public bool teleportToggle = false;
 
     int enumIter;
 
@@ -37,6 +55,7 @@ public class AndyController : MonoBehaviour
     {
 
         _rigidbody = GetComponent<Rigidbody>();
+        _lineRenderer = GetComponent<LineRenderer>();
 
     }
 
@@ -46,6 +65,8 @@ public class AndyController : MonoBehaviour
 
         distToGround = GetComponent<CapsuleCollider>().bounds.extents.y;
         Time.timeScale = 1;
+        _lineRenderer.enabled = false;
+        intGravity = gravity;
 
     }
 
@@ -54,6 +75,22 @@ public class AndyController : MonoBehaviour
     {
 
         //Movement();
+        _lineRenderer.SetPosition(0, this.transform.position);
+
+        if (IsGrounded()) {
+
+            gravity = intGravity;
+            calledOnce = false;
+
+        }
+
+        if (this.transform.position.y >= intialPlayerPos + maxJumpHeight && !IsGrounded() && !calledOnce) {
+
+            gravity *= xGravity;
+            isJumping = false;
+            calledOnce = true;
+
+        }
 
         if (Input.GetButtonDown("GravityFlip") && !stopTimeToggle) {
 
@@ -104,11 +141,24 @@ public class AndyController : MonoBehaviour
 
         }
 
-        if (Input.GetButtonDown("AbilityBack")) {
+        if (Input.GetButtonDown("Teleport")) {
 
+            teleportToggle = !teleportToggle;
+            if (teleportToggle == true) {
 
+                _lineRenderer.enabled = true;
+                AndyGhost.GetComponent<MeshRenderer>().enabled = true;
+
+            } else {
+
+                _lineRenderer.enabled = false;
+                AndyGhost.GetComponent<MeshRenderer>().enabled = false;
+
+            }
 
         }
+
+        Teleport();
 
     }
 
@@ -116,7 +166,7 @@ public class AndyController : MonoBehaviour
     {
 
         //_rigidbody.AddForce(0, gravityModifier * Physics.gravity.y, 0, ForceMode.Force);
-        _rigidbody.velocity += new Vector3(0, gravityModifier * -0.25f, 0);
+        _rigidbody.velocity += new Vector3(0, gravityModifier * gravity, 0);
 
         Movement();
 
@@ -155,19 +205,82 @@ public class AndyController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded()) {
 
-            if (gravityToggle == false)
+            if (gravityToggle == false) {
+
                 _rigidbody.velocity = Vector3.up * jumpForce;
-            else
+                isJumping = true;
+                intialPlayerPos = this.transform.position.y;
+
+            } else {
+
                 _rigidbody.velocity = Vector3.down * jumpForce;
+
+            }
+
+        }
+
+        if (transform.position.y < intialPlayerPos + maxJumpHeight && isJumping == true) {
+
+            _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, jumpForce);
 
         }
 
     }
 
+    public LayerMask layerMask;
+    public bool flipMask;
+
     void Teleport()
     {
 
+        RaycastHit mouseHit;
 
+        GhostCollision ghostCollision = AndyGhost.GetComponent<GhostCollision>();
+
+        int distance = 5;
+
+        Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        Vector3 unitVector = new Vector3();
+
+        if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out mouseHit, Mathf.Infinity, layerMask)) {
+
+            float dX = (mouseHit.point.x - transform.position.x) * (mouseHit.point.x - transform.position.x);
+            float dY = (mouseHit.point.y - transform.position.y) * (mouseHit.point.y - transform.position.y);
+
+            float pointDistance = Mathf.Sqrt(dX + dY);
+
+            unitVector.x = (mouseHit.point.x - this.transform.position.x) / pointDistance;
+            unitVector.y = (mouseHit.point.y - this.transform.position.y) / pointDistance;
+
+            if (pointDistance > distance) {
+
+                _lineRenderer.SetPosition(1, this.transform.position + (distance * unitVector));
+
+            } else {
+
+                _lineRenderer.SetPosition(1, new Vector3(mouseHit.point.x, mouseHit.point.y));
+
+            }
+
+            if(teleportToggle)
+                AndyGhost.transform.position = _lineRenderer.GetPosition(1);
+
+            if (ghostCollision.isColliding == true)
+                AndyGhost.GetComponent<Renderer>().material.color = new Color(255, 0, 0, 45);
+            else
+                AndyGhost.GetComponent<Renderer>().material.color = new Color(0, 0, 255, 45);
+
+            if (Input.GetButtonDown("Fire1") && teleportToggle == true && ghostCollision.isColliding == false) {
+
+                this.transform.position = _lineRenderer.GetPosition(1);
+                teleportToggle = false;
+                _lineRenderer.enabled = false;
+                AndyGhost.GetComponent<MeshRenderer>().enabled = false;
+
+            }
+             
+        }
 
     }
 
