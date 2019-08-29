@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c7bd4fad4b14d9d428f57d5d678bd9e7
+guid: c78ed2fd03c346045822a8e53e1706bb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,7 +9,6 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: SM_Floor_2
-    6400000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -41,9 +40,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
