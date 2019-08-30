@@ -259,7 +259,7 @@ public class AndyController : MonoBehaviour {
 
             } else {
 
-                _lineRenderer.SetPosition(1, new Vector3(mouseHit.point.x, mouseHit.point.y));
+                _lineRenderer.SetPosition(1, new Vector3(mouseHit.point.x, mouseHit.point.y, transform.position.z));
 
             }
 
