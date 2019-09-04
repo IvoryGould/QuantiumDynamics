@@ -1260,7 +1260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f994448ac517948a2cd6be8a3b11c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: 1
+  namesArray: []
+  timingArray: []
+  diaLinesArray: []
+  dialogue: 0
 --- !u!1 &1937930198
 GameObject:
   m_ObjectHideFlags: 0
