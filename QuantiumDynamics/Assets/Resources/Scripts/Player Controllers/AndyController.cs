@@ -84,7 +84,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (this.transform.position.y >= intialPlayerPos + maxJumpHeight && !IsGrounded() && !calledOnce) {
+        if (this.transform.position.y >= intialPlayerPos + maxJumpHeight && !IsGrounded() && !calledOnce && isJumping) {
 
             gravity *= xGravity;
             isJumping = false;
