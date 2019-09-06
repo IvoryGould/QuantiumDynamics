@@ -91,6 +91,13 @@ public class AndyController : MonoBehaviour {
             calledOnce = true;
 
         }
+        else if (this.transform.position.y <= intialPlayerPos - maxJumpHeight && !IsGrounded() && !calledOnce && isJumping) {
+
+            gravity *= xGravity;
+            isJumping = false;
+            calledOnce = true;
+
+        }
 
         if (Input.GetButtonDown("GravityFlip") && !stopTimeToggle) {
 
@@ -214,14 +221,21 @@ public class AndyController : MonoBehaviour {
             } else {
 
                 _rigidbody.velocity = Vector3.down * jumpForce;
+                isJumping = true;
+                intialPlayerPos = this.transform.position.y;
 
             }
 
         }
 
-        if (transform.position.y < intialPlayerPos + maxJumpHeight && isJumping == true) {
+        if (transform.position.y < intialPlayerPos + maxJumpHeight && isJumping == true && !gravityToggle) {
 
             _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, jumpForce);
+
+        }
+        else if (transform.position.y > intialPlayerPos - maxJumpHeight && isJumping == true && gravityToggle) {
+
+            _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, -jumpForce);
 
         }
 
