@@ -10,11 +10,11 @@ public class NarrativeObject : MonoBehaviour
     }
     public enum Terminal
     {
-        Null, Entry
+        Null, Entry, GravFlip, EndLvl1
     }
     public enum Item
     {
-        Null
+        Null, KeyChip
     }
     public enum Log
     {
@@ -50,6 +50,18 @@ public class NarrativeObject : MonoBehaviour
             case Terminal.Entry:
                 narrativeManager.entry = true;
                 break;
+            case Terminal.GravFlip:
+                narrativeManager.gravAct = true;
+                break;
+            case Terminal.EndLvl1:
+                narrativeManager.end = true;
+                break;
+        }
+        switch (item)
+        {
+            case Item.KeyChip:
+                narrativeManager.keyChip = true;
+                break;
         }
     }
     public void OnTriggerStay(Collider playerCol)
@@ -58,6 +70,7 @@ public class NarrativeObject : MonoBehaviour
         {
             case Type.Item:
                 PickedUp();
+                Destroy(this.gameObject);
                 break;
             case Type.Terminal:
                 if (Input.GetButtonDown("Interact"))
