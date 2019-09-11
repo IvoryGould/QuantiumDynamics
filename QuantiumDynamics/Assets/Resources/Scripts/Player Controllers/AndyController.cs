@@ -108,13 +108,13 @@ public class AndyController : MonoBehaviour {
 
                 //Physics.gravity = new Vector3(0, 19.62f, 0);
                 this.gravityModifier = -1 / Time.timeScale;
-                transform.Rotate(0, 0, 180, Space.Self);
+                transform.Rotate(0, 180, 180, Space.Self);
 
             } else {
 
                 //Physics.gravity = new Vector3(0, -19.62f, 0);
                 this.gravityModifier = 1 / Time.timeScale;
-                transform.Rotate(0, 0, 180, Space.Self);
+                transform.Rotate(0, 180, 180, Space.Self);
 
             }
 
@@ -201,13 +201,21 @@ public class AndyController : MonoBehaviour {
         _rigidbody.velocity = new Vector3(translation, _rigidbody.velocity.y);
 
 
-        if (translation > 0) {
+        if (translation > 0 && !gravityToggle) {
 
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, -90, transform.eulerAngles.z);
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
 
-        } else if (translation < 0) {
+        } else if (translation < 0 && !gravityToggle) {
 
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 90, transform.eulerAngles.z);
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+
+        } else if (translation > 0 && gravityToggle) {
+
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+
+        } else if (translation < 0 && gravityToggle) {
+
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
 
         }
 
