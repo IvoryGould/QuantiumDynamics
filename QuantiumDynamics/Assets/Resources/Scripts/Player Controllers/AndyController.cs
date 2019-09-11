@@ -63,6 +63,7 @@ public class AndyController : MonoBehaviour {
     void Start()
     {
 
+        quantumPhysics.timeModifier = 1;
         distToGround = GetComponent<CapsuleCollider>().bounds.extents.y;
         Time.timeScale = 1;
         _lineRenderer.enabled = false;
