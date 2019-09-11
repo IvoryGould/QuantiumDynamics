@@ -127,18 +127,18 @@ MonoBehaviour:
   AndyGhost: {fileID: 0}
   speed: 10
   jumpForce: 7.5
-  maxJumpHeight: 0
-  xGravity: 0
+  maxJumpHeight: 3
+  xGravity: 1
   gravityModifier: 1
-  gravity: 0
-  quantumPhysics: {fileID: 0}
+  gravity: 1
+  quantumPhysics: {fileID: 11400000, guid: d38b5ace95cd8e943a41903a4a6ad80a, type: 2}
   gravityToggle: 0
   timeToggle: 0
   stopTimeToggle: 0
   teleportToggle: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8192
   flipMask: 0
 --- !u!114 &395481251800561834
 MonoBehaviour:
