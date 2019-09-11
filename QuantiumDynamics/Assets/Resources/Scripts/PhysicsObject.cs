@@ -15,7 +15,7 @@ public class PhysicsObject : MonoBehaviour
     {
 
         _rigidbody = this.GetComponent<Rigidbody>();
-        _rigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+        //_rigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
         _rigidbody.useGravity = false;
 
     }

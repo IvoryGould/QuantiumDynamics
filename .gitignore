@@ -36,3 +36,6 @@ sysinfo.txt
 *.unitypackage
 Documentation/~$antum Dynamics - Game Design Document.docx
 DemoBuild(UpdatedMusic)/
+*.asset
+*.asset
+*.asset
