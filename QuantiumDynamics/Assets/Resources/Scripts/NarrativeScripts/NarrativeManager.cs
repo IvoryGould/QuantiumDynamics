@@ -32,6 +32,8 @@ public class NarrativeManager : MonoBehaviour
     public string ryanIDCardJourn;
     public bool vHSTape;
     public string vHSTapeJourn;
+    public bool jasonIDCard;
+    public string jasonIDCardJourn;
     private GameObject journalBox; 
     private TextMeshProUGUI journalBoxTxt;
 
@@ -60,6 +62,7 @@ public class NarrativeManager : MonoBehaviour
         ryanIDCardJourn = "Ryan’s ID card for the lab. He mentioned it was missing a while ago, and had a new one made, I guess this is his old one. I wonder if it still works to get access to places that are usually locked off...or did he lose it again...maybe I should ask him. He's always losing things.";
         items.Add(vHSTape);
         vHSTapeJourn = "I don’t even know what this is. It seems to encode images onto a magnetic strip, but we haven’t used that kind of storage for anything like that here; we only use that for data storage, and they don’t look like this. Reading it as best I can, it seems to have lots of similar pictures of Ryan, but not as I’ve known him. I wonder what it could be.";
-
+        items.Add(jasonIDCard);
+        jasonIDCardJourn = "Jason’s ID card for the lab. It looks like it got caught on something and ripped off the clip. He hasn’t mentioned it was missing, so I guess it just happened. Hopefully he isn’t freaking out about it; he seems to get pretty worried about some things. I’ll give it to him when I see him.";
     }
 }

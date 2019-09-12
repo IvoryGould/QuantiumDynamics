@@ -127,4 +127,16 @@ public class JournalButtons : MonoBehaviour
             journalBoxTxt.text = narrativeManager.vHSTapeJourn;
         }
     }
+    public void JasonIDCard()
+    {
+        if (journalBoxTxt == null)
+        {
+            journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+            journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
+        }
+        if (narrativeManager.jasonIDCard == true)
+        {
+            journalBoxTxt.text = narrativeManager.jasonIDCardJourn;
+        }
+    }
 }
