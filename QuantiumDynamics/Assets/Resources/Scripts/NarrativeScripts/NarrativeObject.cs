@@ -14,7 +14,7 @@ public class NarrativeObject : MonoBehaviour
     }
     public enum Item
     {
-        Null, KeyChip, RyanIDCard
+        Null, KeyChip, RyanIDCard, VHSTape
     }
     public enum Log
     {
@@ -66,6 +66,9 @@ public class NarrativeObject : MonoBehaviour
                 break;
             case Item.RyanIDCard:
                 narrativeManager.ryanIDCard = true;
+                break;
+            case Item.VHSTape:
+                narrativeManager.vHSTape = true;
                 break;
         }
         switch (log)

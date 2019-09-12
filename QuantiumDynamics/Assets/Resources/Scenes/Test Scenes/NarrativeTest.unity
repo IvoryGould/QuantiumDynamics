@@ -662,8 +662,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -817,7 +817,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7837129808316031827}
-        m_MethodName: EntryEntry
+        m_MethodName: VHSTapeJourn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -986,7 +986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   terminal: 0
-  item: 1
+  item: 3
   log: 0
 --- !u!1001 &1857194973
 PrefabInstance:

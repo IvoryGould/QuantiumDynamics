@@ -30,6 +30,8 @@ public class NarrativeManager : MonoBehaviour
     public string ryanPortableJourn2;
     public bool ryanIDCard;
     public string ryanIDCardJourn;
+    public bool vHSTape;
+    public string vHSTapeJourn;
     private GameObject journalBox; 
     private TextMeshProUGUI journalBoxTxt;
 
@@ -56,5 +58,8 @@ public class NarrativeManager : MonoBehaviour
         ryanPortableJourn2 = "'Jason continues to bring up military projects as a way to increase funding. He fails to see just how dangerous this technology would be in militaristic hands; when leveraged to it’s full potential, it would make an army, or even a single entity, unstoppable. The technology must be contained, or at the very least kept to a select group of people who understand the situation at stake. No military can be trusted to do so, private or otherwise.'".Replace("'", "\"");
         items.Add(ryanIDCard);
         ryanIDCardJourn = "Ryan’s ID card for the lab. He mentioned it was missing a while ago, and had a new one made, I guess this is his old one. I wonder if it still works to get access to places that are usually locked off...or did he lose it again...maybe I should ask him. He's always losing things.";
+        items.Add(vHSTape);
+        vHSTapeJourn = "I don’t even know what this is. It seems to encode images onto a magnetic strip, but we haven’t used that kind of storage for anything like that here; we only use that for data storage, and they don’t look like this. Reading it as best I can, it seems to have lots of similar pictures of Ryan, but not as I’ve known him. I wonder what it could be.";
+
     }
 }
