@@ -21,7 +21,7 @@ public class JournalButtons : MonoBehaviour
     }
     public void EntryEntry()
     {
-        if (journalBox == null)
+        if (journalBoxTxt == null)
         {
             journalBox = GameObject.FindGameObjectWithTag("JournalBox");
             journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
@@ -29,6 +29,90 @@ public class JournalButtons : MonoBehaviour
         if (narrativeManager.entry == true)
         {
             journalBoxTxt.text = narrativeManager.entryJourn;
+        }
+    }
+    public void GravFlipButton()
+    {
+        if (journalBoxTxt == null)
+        {
+            journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+            journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
+        }
+        if(narrativeManager.gravAct==true)
+        {
+            journalBoxTxt.text = narrativeManager.gravActJourn;
+        }
+    }
+    public void TestEnd()
+    {
+        if(journalBoxTxt == null)
+        {
+            journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+            journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
+        }
+        if(narrativeManager.end==true)
+        {
+            journalBoxTxt.text = narrativeManager.gravActJourn;
+        }
+    }
+    public void KeyChipJourn()
+    {
+        if (journalBoxTxt == null)
+        {
+            journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+            journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
+        }
+        if (narrativeManager.keyChip == true)
+        {
+            journalBoxTxt.text = narrativeManager.keyChipJourn;
+        }
+    }
+    public void RyanPortableJourn1()
+    {
+        if (journalBoxTxt == null)
+        {
+            journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+            journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
+        }
+        if (narrativeManager.ryanPortable1 == true)
+        {
+            journalBoxTxt.text = narrativeManager.ryanPortableJourn1;
+        }
+    }
+    public void JasonPortableJourn1()
+    {
+        if (journalBoxTxt == null)
+        {
+            journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+            journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
+        }
+        if (narrativeManager.jasonPortable1 == true)
+        {
+            journalBoxTxt.text = narrativeManager.jasonPortableJourn1;
+        }
+    }
+    public void RyanPortableJourn2()
+    {
+        if (journalBoxTxt == null)
+        {
+            journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+            journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
+        }
+        if (narrativeManager.ryanPortable2 == true)
+        {
+            journalBoxTxt.text = narrativeManager.ryanPortableJourn2;
+        }
+    }
+    public void RyanIDCard()
+    {
+        if (journalBoxTxt == null)
+        {
+            journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+            journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>(); 
+        }
+        if (narrativeManager.ryanIDCard == true)
+        {
+            journalBoxTxt.text = narrativeManager.ryanIDCardJourn;
         }
     }
 }

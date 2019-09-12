@@ -14,11 +14,11 @@ public class NarrativeObject : MonoBehaviour
     }
     public enum Item
     {
-        Null, KeyChip
+        Null, KeyChip, RyanIDCard
     }
     public enum Log
     {
-        Null
+        Null, RyanPortable1, JasonPortable1, RyanPortable2
     }
     public Type type;
     public Terminal terminal;
@@ -59,8 +59,27 @@ public class NarrativeObject : MonoBehaviour
         }
         switch (item)
         {
+            case Item.Null:
+                break; 
             case Item.KeyChip:
                 narrativeManager.keyChip = true;
+                break;
+            case Item.RyanIDCard:
+                narrativeManager.ryanIDCard = true;
+                break;
+        }
+        switch (log)
+        {
+            case Log.Null:
+                break;
+            case Log.RyanPortable1:
+                narrativeManager.ryanPortable1 = true;
+                break;
+            case Log.JasonPortable1:
+                narrativeManager.jasonPortable1 = true;
+                break;
+            case Log.RyanPortable2:
+                narrativeManager.ryanPortable2 = true;
                 break;
         }
     }
@@ -68,15 +87,25 @@ public class NarrativeObject : MonoBehaviour
     {
         switch (type)
         {
-            case Type.Item:
-                PickedUp();
-                Destroy(this.gameObject);
-                break;
             case Type.Terminal:
                 if (Input.GetButtonDown("Interact"))
                 {
                     PickedUp();
                 }
+                break;
+        }
+    }
+    public void OnTriggerEnter(Collider playerCol)
+    {
+        switch (type)
+        {
+            case Type.Item:
+                PickedUp();
+                Destroy(this.gameObject);
+                break;
+            case Type.Log:
+                PickedUp();
+                Destroy(this.gameObject);
                 break;
         }
     }
