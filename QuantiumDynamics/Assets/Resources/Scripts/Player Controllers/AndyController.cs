@@ -2,54 +2,64 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
 [RequireComponent(typeof(LineRenderer))]
 public class AndyController : MonoBehaviour {
 
-    Rigidbody _rigidbody;
-    LineRenderer _lineRenderer;
+    Rigidbody _rigidbody; //players member rigidbody
+    LineRenderer _lineRenderer; //players member linerenderer
 
+    [Header("Generic")]
+    [Tooltip("The holographic render of the character for teleport feedback")]
     public GameObject AndyGhost;
 
-    public float speed = 10f;
-    public float jumpForce = 7.5f;
+    [Header("EnergyBar")]
+    [Tooltip("Energy Bar image for accessing the fill property")]
+    public Image energyBar;
+    [Tooltip("How much energy to remove when gravity flipping")]
+    public float gravSubtract;
+    [Tooltip("How much energy to remove when slowing time")]
+    public float slowSubtract;
+    [Tooltip("How much energy to remove when stopping time")]   
+    public float stopSubtract;
+    [Tooltip("How much energy to remove when teleporting")]
+    public float teleSubtract;
 
-    [Header("Jump Calcs")]
+    [Header("Player Physics")]
+    [Tooltip("The Quantum Physics Scriptable object")]
+    public QuantumPhysics quantumPhysics;
     [Tooltip("Maximum Height the player can jump above its self")]
     public float maxJumpHeight; 
     [Tooltip("Gravity multiplier to be applyed to gravity after jump height is reached")]
     public float xGravity;
-    private float intialPlayerPos;
-
-    public float gravityModifier = 1;
-    public float gravity;
-    float intGravity;
-
-    public QuantumPhysics quantumPhysics;
+    [Tooltip("Gravity of the Player")]
+    public float gravity = -0.5f;
+    [Tooltip("Players Speed to be applyed in movement")]
+    public float speed = 10f;
+    [Tooltip("Players jump speed to be applyed when jumping")]
+    public float jumpForce = 7.5f;
+    [Tooltip("Non-physics layer for raycasting")]
+    public LayerMask layerMask;
 
     private bool calledOnce;
-
-    private bool isJumping;
+    private bool isJumping; //check to see if the player is jumping
+    private float gravityModifier = 1; //gravity flip modifier
+    private bool fillCalledOnce;
+    private float intialPlayerPos; //storage of the players position for jumping
 
     float distToGround;
+    float intGravity;
 
-    public bool gravityToggle = false;
-    public bool timeToggle = false;
-    public bool stopTimeToggle = false;
-    public bool teleportToggle = false;
+    //toggles for the ablities
+    bool gravityToggle = false; //gravity flip
+    bool timeToggle = false; //slow time
+    bool stopTimeToggle = false; //stop time
+    bool teleportToggle = false; //teleportation
 
-    int enumIter;
-
-    enum ABILITIES
-    {
-
-        GravityFilp,
-        TimeSlow,
-        TimeStop
-
-    }
+    bool flipMask;
 
     private void Awake()
     {
@@ -100,9 +110,17 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("GravityFlip") && !stopTimeToggle) {
+        if (Input.GetButtonDown("GravityFlip") && energyBar.fillAmount >= gravSubtract) {
 
             gravityToggle = !gravityToggle;
+            energyBar.fillAmount -= gravSubtract;
+
+            if (fillCalledOnce == false) {
+
+                fillCalledOnce = true;
+                StartCoroutine(EnergyFill());
+
+            }
 
             if (gravityToggle == true) {
 
@@ -120,9 +138,17 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("TimeScaleSlow") && !stopTimeToggle) {
+        if (Input.GetButtonDown("TimeScaleSlow") && !stopTimeToggle && energyBar.fillAmount >= slowSubtract) {
 
             timeToggle = !timeToggle;
+            energyBar.fillAmount -= slowSubtract;
+
+            if (fillCalledOnce == false) {
+
+                fillCalledOnce = true;
+                StartCoroutine(EnergyFill());
+
+            }
 
             if (timeToggle == true)
                 quantumPhysics.timeModifier = 0.2f;
@@ -135,10 +161,19 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("TimeScaleStop")) {
+        if (Input.GetButtonDown("TimeScaleStop") && energyBar.fillAmount >= stopSubtract) {
 
             stopTimeToggle = !stopTimeToggle;
             timeToggle = false;
+
+            energyBar.fillAmount -= stopSubtract;
+
+            if (fillCalledOnce == false) {
+
+                fillCalledOnce = true;
+                StartCoroutine(EnergyFill());
+
+            }
 
             if (stopTimeToggle == true)
                 quantumPhysics.timeModifier = 0;
@@ -149,9 +184,10 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("Teleport")) {
+        if (Input.GetButtonDown("Teleport") && energyBar.fillAmount >= teleSubtract) {
 
             teleportToggle = !teleportToggle;
+
             if (teleportToggle == true) {
 
                 _lineRenderer.enabled = true;
@@ -250,9 +286,6 @@ public class AndyController : MonoBehaviour {
 
     }
 
-    public LayerMask layerMask;
-    public bool flipMask;
-
     void Teleport()
     {
 
@@ -296,6 +329,15 @@ public class AndyController : MonoBehaviour {
 
             if (Input.GetButtonDown("Fire1") && teleportToggle == true && ghostCollision.isColliding == false) {
 
+                energyBar.fillAmount -= teleSubtract;
+
+                if (fillCalledOnce == false) {
+
+                    fillCalledOnce = true;
+                    StartCoroutine(EnergyFill());
+
+                }
+
                 this.transform.position = _lineRenderer.GetPosition(1);
                 teleportToggle = false;
                 _lineRenderer.enabled = false;
@@ -304,6 +346,19 @@ public class AndyController : MonoBehaviour {
             }
              
         }
+
+    }
+
+    IEnumerator EnergyFill() {
+
+        while (energyBar.fillAmount != 1) {
+
+            yield return new WaitForSeconds(1);
+            energyBar.fillAmount += 0.1f;
+
+        }
+
+        fillCalledOnce = false;
 
     }
 
