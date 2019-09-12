@@ -4,6 +4,9 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+Assets/ArticyColtent/
+Assets/ArticyContent/
+Assets/ArticyImporter/
 
 # Visual Studio cache directory
 .vs/
