@@ -48,6 +48,7 @@ public class AndyController : MonoBehaviour {
     private bool isJumping; //check to see if the player is jumping
     private float gravityModifier = 1; //gravity flip modifier
     private bool fillCalledOnce;
+    private bool drainCalledOnce;
     private float intialPlayerPos; //storage of the players position for jumping
 
     float distToGround;
@@ -66,6 +67,7 @@ public class AndyController : MonoBehaviour {
 
         _rigidbody = GetComponent<Rigidbody>();
         _lineRenderer = GetComponent<LineRenderer>();
+        quantumPhysics = Resources.Load("QuantumPhysics") as QuantumPhysics;
 
     }
 
@@ -92,6 +94,14 @@ public class AndyController : MonoBehaviour {
 
             gravity = intGravity;
             calledOnce = false;
+
+        }
+
+        if (timeToggle || stopTimeToggle && drainCalledOnce == false) {
+
+            drainCalledOnce = true;
+            StopCoroutine(EnergyFill());
+            StartCoroutine(EnergyDrain());
 
         }
 
@@ -138,10 +148,10 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("TimeScaleSlow") && !stopTimeToggle && energyBar.fillAmount >= slowSubtract) {
+        if (Input.GetButtonDown("TimeScaleSlow") && !stopTimeToggle) {
 
             timeToggle = !timeToggle;
-            energyBar.fillAmount -= slowSubtract;
+
 
             if (fillCalledOnce == false) {
 
@@ -150,12 +160,16 @@ public class AndyController : MonoBehaviour {
 
             }
 
-            if (timeToggle == true)
+            if (timeToggle == true && energyBar.fillAmount >= slowSubtract) {
+
                 quantumPhysics.timeModifier = 0.2f;
-            //Time.timeScale = 0.2f;
-            else
+                energyBar.fillAmount -= slowSubtract;
+
+            } else {
+
                 quantumPhysics.timeModifier = 1;
-                //Time.timeScale = 1;
+
+            }
 
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
 
@@ -359,6 +373,19 @@ public class AndyController : MonoBehaviour {
         }
 
         fillCalledOnce = false;
+
+    }
+
+    IEnumerator EnergyDrain() {
+
+        while (timeToggle || stopTimeToggle) {
+
+            yield return new WaitForSeconds(0.5f);
+            energyBar.fillAmount -= 0.02f;
+
+        }
+
+        drainCalledOnce = false;
 
     }
 
