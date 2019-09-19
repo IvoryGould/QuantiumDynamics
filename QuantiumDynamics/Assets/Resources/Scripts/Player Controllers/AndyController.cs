@@ -11,6 +11,7 @@ public class AndyController : MonoBehaviour {
 
     Rigidbody _rigidbody; //players member rigidbody
     LineRenderer _lineRenderer; //players member linerenderer
+    Animator _animator;
 
     [Header("Generic")]
     [Tooltip("The holographic render of the character for teleport feedback")]
@@ -67,6 +68,7 @@ public class AndyController : MonoBehaviour {
 
         _rigidbody = GetComponent<Rigidbody>();
         _lineRenderer = GetComponent<LineRenderer>();
+        _animator = GetComponent<Animator>();
         quantumPhysics = Resources.Load("QuantumPhysics") as QuantumPhysics;
 
     }
@@ -86,6 +88,18 @@ public class AndyController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+        _animator.SetFloat("Speed", Input.GetAxis("Horizontal"));
+
+        if (_animator.GetFloat("Speed") == 0) {
+
+            _animator.SetBool("Idle", true);
+
+        } else {
+
+            _animator.SetBool("Idle", false);
+
+        }
 
         //Movement();
         _lineRenderer.SetPosition(0, this.transform.position);
@@ -273,12 +287,14 @@ public class AndyController : MonoBehaviour {
 
             if (gravityToggle == false) {
 
+                _animator.SetTrigger("Jump");
                 _rigidbody.velocity = Vector3.up * jumpForce;
                 isJumping = true;
                 intialPlayerPos = this.transform.position.y;
 
             } else {
 
+                _animator.SetTrigger("Jump");
                 _rigidbody.velocity = Vector3.down * jumpForce;
                 isJumping = true;
                 intialPlayerPos = this.transform.position.y;
