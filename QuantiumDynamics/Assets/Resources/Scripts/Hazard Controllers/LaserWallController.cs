@@ -4,40 +4,53 @@ using UnityEngine;
 
 public class LaserWallController : MonoBehaviour
 {
-    [Tooltip("DEBUG: When active, laser wall will move towards location.")]
-    public bool Activated = false;
+    public enum Movement { Constant, Lerp };
+
+    public Movement MovementType;
+
+    [Header("GameObjects")]
     [Tooltip("GameObject that will be moved")]
     public GameObject LaserWall;
     [Tooltip("Destination point where GameObject will move to")]
     public Transform Destination;
+    [Header("Variables")]
     [Tooltip("Speed of which the laser wall will move.")]
     public float Speed;
+    [Tooltip("Length of time until wall resets")]
+    public float ReturnTime;
 
+    [HideInInspector]
+    public bool Activated;
     [HideInInspector]
     public int _toolbarTab;
     [HideInInspector]
     public string _currentTab;
     [HideInInspector]
     public Vector3 _origin;
-    // Start is called before the first frame update
+    private float _timer;
+    
     void Start()
     {
-        _origin = LaserWall.transform.position;
+        Activated = false;
         
+        _origin = LaserWall.transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
- 
-
         switch (Activated)
         {
             case true:
-                //use to increase speed over time
-                //Speed = Speed + (10 * Time.deltaTime);
-
-                LaserWall.transform.position = Vector3.MoveTowards(LaserWall.transform.position, Destination.position, Speed / 1000);
+                switch (MovementType)
+                {
+                    case Movement.Constant:
+                        LaserWall.transform.position = Vector3.MoveTowards(LaserWall.transform.position, Destination.position, Speed / 1000);
+                        break;
+                    case Movement.Lerp:
+                        //LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, Destination.position, Speed / 100);
+                        StartCoroutine(LerpMovement(ReturnTime));
+                        break;
+                }
                 break;
         }
     }
@@ -46,4 +59,13 @@ public class LaserWallController : MonoBehaviour
     {
         LaserWall.transform.position = _origin;
     }
+
+    IEnumerator LerpMovement(float time) {
+
+        LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, Destination.position, Speed / 100);
+        yield return new WaitForSeconds(time);
+        LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, _origin, Speed / 100);
+
+    }
+
 }

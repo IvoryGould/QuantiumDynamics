@@ -9,7 +9,7 @@ public class LaserWallDebugger : Editor
     private LaserWallController _dependancy;
     private SerializedObject _soDependancy;
 
-    private SerializedProperty Activated, LaserWall, Destination, Speed, String;
+    private SerializedProperty Activated, LaserWall, Destination, Speed, ReturnTime, MovementType;
 
     private void OnEnable()
     {
@@ -20,6 +20,8 @@ public class LaserWallDebugger : Editor
         LaserWall = _soDependancy.FindProperty("LaserWall");
         Destination = _soDependancy.FindProperty("Destination");
         Speed = _soDependancy.FindProperty("Speed");
+        ReturnTime = _soDependancy.FindProperty("ReturnTime");
+        MovementType = _soDependancy.FindProperty("MovementType");
     }
     public override void OnInspectorGUI()
     {
@@ -51,11 +53,18 @@ public class LaserWallDebugger : Editor
             case "Variables":
                 EditorGUILayout.PropertyField(LaserWall);
                 EditorGUILayout.PropertyField(Destination);
-                EditorGUILayout.PropertyField(Speed);
+                EditorGUILayout.PropertyField(MovementType);
+                EditorGUILayout.PropertyField(Speed);                
+                switch (_dependancy.MovementType)
+                {
+                    case LaserWallController.Movement.Lerp:
+                        EditorGUILayout.PropertyField(ReturnTime);
+                        break;
+                }
                 break;
 
             case "Debugging":
-                
+                EditorGUILayout.PropertyField(Speed);
                 if (GUILayout.Button("Reset"))
                 {
                     _dependancy.Activated = false;
@@ -72,7 +81,6 @@ public class LaserWallDebugger : Editor
                         _dependancy.Activated = true;
                     }
                 }
-
                 break;
         }
 
