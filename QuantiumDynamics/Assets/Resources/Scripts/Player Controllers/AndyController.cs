@@ -16,6 +16,7 @@ public class AndyController : MonoBehaviour {
     [Header("Generic")]
     [Tooltip("The holographic render of the character for teleport feedback")]
     public GameObject AndyGhost;
+    public GameObject centre;
 
     [Header("EnergyBar")]
     [Tooltip("Energy Bar image for accessing the fill property")]
@@ -30,8 +31,6 @@ public class AndyController : MonoBehaviour {
     public float teleSubtract;
 
     [Header("Player Physics")]
-    [Tooltip("The Quantum Physics Scriptable object")]
-    public QuantumPhysics quantumPhysics;
     [Tooltip("Maximum Height the player can jump above its self")]
     public float maxJumpHeight; 
     [Tooltip("Gravity multiplier to be applyed to gravity after jump height is reached")]
@@ -51,6 +50,7 @@ public class AndyController : MonoBehaviour {
     private bool fillCalledOnce;
     private bool drainCalledOnce;
     private float intialPlayerPos; //storage of the players position for jumping
+    private QuantumPhysics quantumPhysics;
 
     float distToGround;
     float intGravity;
@@ -134,7 +134,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("GravityFlip") && energyBar.fillAmount >= gravSubtract) {
+        if (Input.GetButtonDown("GravityFlip") /*&& energyBar.fillAmount >= gravSubtract*/) {
 
             gravityToggle = !gravityToggle;
             energyBar.fillAmount -= gravSubtract;
@@ -151,12 +151,14 @@ public class AndyController : MonoBehaviour {
                 //Physics.gravity = new Vector3(0, 19.62f, 0);
                 this.gravityModifier = -1 / Time.timeScale;
                 transform.Rotate(0, 180, 180, Space.Self);
+                transform.position = new Vector3(transform.position.x, transform.position.y + 2.5f, transform.position.z);
 
             } else {
 
                 //Physics.gravity = new Vector3(0, -19.62f, 0);
                 this.gravityModifier = 1 / Time.timeScale;
                 transform.Rotate(0, 180, 180, Space.Self);
+                transform.position = new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z);
 
             }
 
@@ -174,7 +176,7 @@ public class AndyController : MonoBehaviour {
 
             }
 
-            if (timeToggle == true && energyBar.fillAmount >= slowSubtract) {
+            if (timeToggle == true /*&& energyBar.fillAmount >= slowSubtract*/) {
 
                 quantumPhysics.timeModifier = 0.2f;
                 energyBar.fillAmount -= slowSubtract;
@@ -189,7 +191,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("TimeScaleStop") && energyBar.fillAmount >= stopSubtract) {
+        if (Input.GetButtonDown("TimeScaleStop") /*&& energyBar.fillAmount >= stopSubtract*/) {
 
             stopTimeToggle = !stopTimeToggle;
             timeToggle = false;
@@ -212,7 +214,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("Teleport") && energyBar.fillAmount >= teleSubtract) {
+        if (Input.GetButtonDown("Teleport") /*&& energyBar.fillAmount >= teleSubtract*/) {
 
             teleportToggle = !teleportToggle;
 
