@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class NarrativeManager : MonoBehaviour
 {
+    private NarrativeManager[] narrativeManager;
     //List of all terminals
     [HideInInspector]
     public List<bool> terminals;
@@ -36,11 +38,21 @@ public class NarrativeManager : MonoBehaviour
     public string jasonIDCardJourn;
     private GameObject journalBox; 
     private TextMeshProUGUI journalBoxTxt;
+    private Scene currentScene;
 
+    void Awake()
+    {
+        narrativeManager = Object.FindObjectsOfType<NarrativeManager>();
+        if (narrativeManager.Length<=1)
+        {
+            Destroy(this);
+        }
+        Object.DontDestroyOnLoad(this.gameObject);
+    }
     // Start is called before the first frame update
     void Start()
     {
-        Object.DontDestroyOnLoad(this.gameObject);
+        currentScene = SceneManager.GetActiveScene();
         terminals = new List<bool>();
         items = new List<bool>();
         logs = new List<bool>();
@@ -64,5 +76,15 @@ public class NarrativeManager : MonoBehaviour
         vHSTapeJourn = "I don’t even know what this is. It seems to encode images onto a magnetic strip, but we haven’t used that kind of storage for anything like that here; we only use that for data storage, and they don’t look like this. Reading it as best I can, it seems to have lots of similar pictures of Ryan, but not as I’ve known him. I wonder what it could be.";
         items.Add(jasonIDCard);
         jasonIDCardJourn = "Jason’s ID card for the lab. It looks like it got caught on something and ripped off the clip. He hasn’t mentioned it was missing, so I guess it just happened. Hopefully he isn’t freaking out about it; he seems to get pretty worried about some things. I’ll give it to him when I see him.";
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(currentScene.buildIndex!=0)
+            {
+                SceneManager.LoadScene(0);
+            }
+        }
     }
 }
