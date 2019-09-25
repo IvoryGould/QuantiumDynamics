@@ -16,7 +16,6 @@ public class AndyController : MonoBehaviour {
     [Header("Generic")]
     [Tooltip("The holographic render of the character for teleport feedback")]
     public GameObject AndyGhost;
-    public GameObject centre;
 
     [Header("EnergyBar")]
     [Tooltip("Energy Bar image for accessing the fill property")]
