@@ -970,7 +970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dbce2afe9922c4481609044226d1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: 0
+  movement: -0.5
 --- !u!1 &698762780
 GameObject:
   m_ObjectHideFlags: 0
