@@ -28,6 +28,8 @@ public class LaserWallController : MonoBehaviour
     [HideInInspector]
     public Vector3 _origin;
     private float _timer;
+
+    private bool calledOnce = false;
     
     void Start()
     {
@@ -47,8 +49,19 @@ public class LaserWallController : MonoBehaviour
                         LaserWall.transform.position = Vector3.MoveTowards(LaserWall.transform.position, Destination.position, Speed / 1000);
                         break;
                     case Movement.Lerp:
-                        //LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, Destination.position, Speed / 100);
-                        StartCoroutine(LerpMovement(ReturnTime));
+
+                        if (LaserWall.transform.position != Destination.position && calledOnce == false) {
+
+                            LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, Destination.position, Speed / 100);
+
+                        }
+
+                        if (calledOnce == false) {
+
+                            StartCoroutine(LerpMovement(ReturnTime));
+
+                        }
+
                         break;
                 }
                 break;
@@ -62,9 +75,17 @@ public class LaserWallController : MonoBehaviour
 
     IEnumerator LerpMovement(float time) {
 
-        LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, Destination.position, Speed / 100);
+        calledOnce = true;
+
         yield return new WaitForSeconds(time);
-        LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, _origin, Speed / 100);
+
+        if (LaserWall.transform.position != _origin) {
+
+            LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, _origin, Speed / 100);
+
+        }
+
+        calledOnce = false;
 
     }
 
