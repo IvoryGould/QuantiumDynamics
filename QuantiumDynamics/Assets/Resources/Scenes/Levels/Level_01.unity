@@ -879,6 +879,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (39)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -938,11 +943,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (39)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -1044,6 +1044,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (47)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1103,11 +1108,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (47)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -1414,6 +1414,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1473,11 +1478,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -1684,6 +1684,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1744,11 +1749,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1769,6 +1769,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (29)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1829,11 +1834,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1854,6 +1854,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (33)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1909,11 +1914,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (33)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &104954749 stripped
@@ -1929,6 +1929,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1989,11 +1994,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2014,6 +2014,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2069,11 +2074,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &137173740 stripped
@@ -2089,6 +2089,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2149,11 +2154,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &141882587 stripped
@@ -2169,6 +2169,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2223,11 +2228,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -2484,6 +2484,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2538,11 +2543,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -2654,6 +2654,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2709,11 +2714,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &213295710 stripped
@@ -2729,6 +2729,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (39)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2789,11 +2794,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (39)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &217990863 stripped
@@ -2809,6 +2809,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2868,11 +2873,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -3014,6 +3014,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (30)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3079,11 +3084,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (30)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -3104,6 +3104,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (36)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3163,11 +3168,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -3369,6 +3369,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (37)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3423,11 +3428,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (37)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -3524,6 +3524,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (40)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3589,11 +3594,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (40)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &296788406 stripped
@@ -3609,6 +3609,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3664,11 +3669,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &300136042 stripped
@@ -3684,6 +3684,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (29)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3738,11 +3743,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -3854,6 +3854,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3909,11 +3914,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &317646961 stripped
@@ -3929,6 +3929,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3989,11 +3994,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (18)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &321326104 stripped
@@ -4009,6 +4009,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4064,11 +4069,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &325088754 stripped
@@ -4084,6 +4084,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4138,11 +4143,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -4254,6 +4254,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (36)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4314,11 +4319,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (36)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &341202271 stripped
@@ -4334,6 +4334,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4389,11 +4394,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -4414,6 +4414,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (37)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4474,11 +4479,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (37)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &349269521 stripped
@@ -4494,6 +4494,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4549,11 +4554,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &350783128 stripped
@@ -4569,6 +4569,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4628,11 +4633,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -4898,6 +4898,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (57)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4957,11 +4962,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (57)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -5073,6 +5073,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5133,11 +5138,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (12)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &370726692 stripped
@@ -5153,6 +5153,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (35)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5213,11 +5218,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (35)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &377198078 stripped
@@ -5233,6 +5233,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (28)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5287,11 +5292,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -5383,6 +5383,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5438,11 +5443,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (27)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &397687267 stripped
@@ -5458,6 +5458,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5518,11 +5523,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (27)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &410896312 stripped
@@ -5538,6 +5538,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5592,11 +5597,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -5708,6 +5708,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5762,11 +5767,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -5873,6 +5873,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (32)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5932,11 +5937,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (32)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -6118,6 +6118,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6173,11 +6178,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -6198,6 +6198,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (36)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6257,11 +6262,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (36)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -6463,6 +6463,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6522,11 +6527,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -6628,6 +6628,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6687,11 +6692,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -6783,6 +6783,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6837,11 +6842,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27b3241bb6013ef44bff4820b1acca1a, type: 3}
@@ -6948,6 +6948,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (35)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7003,11 +7008,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (35)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &516648061 stripped
@@ -7023,6 +7023,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (34)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7083,11 +7088,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (34)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &524784964 stripped
@@ -7103,6 +7103,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7163,11 +7168,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (15)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &527022075 stripped
@@ -7183,6 +7183,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (28)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7242,11 +7247,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -7338,6 +7338,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7392,11 +7397,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -7668,6 +7668,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7727,11 +7732,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -7838,6 +7838,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7893,11 +7898,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &560115683 stripped
@@ -7913,6 +7913,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7973,11 +7978,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (19)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &573095767 stripped
@@ -7993,6 +7993,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8053,11 +8058,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8078,6 +8078,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8138,11 +8143,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (21)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &580019833 stripped
@@ -8158,6 +8158,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (51)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8218,11 +8223,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (51)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8243,6 +8243,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (35)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8303,11 +8308,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (35)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &583126085 stripped
@@ -8323,6 +8323,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (48)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8388,11 +8393,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (48)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8413,6 +8413,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8473,11 +8478,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (10)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &587476187 stripped
@@ -8493,6 +8493,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (34)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8548,11 +8553,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (34)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &601249039 stripped
@@ -8568,6 +8568,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8632,11 +8637,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (8)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -8748,6 +8748,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8803,11 +8808,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &619045594 stripped
@@ -8823,6 +8823,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (33)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8877,11 +8882,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -9132,6 +9132,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9191,11 +9196,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -9477,6 +9477,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9532,11 +9537,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (22)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &661845334 stripped
@@ -9585,6 +9585,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9644,11 +9649,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -9850,6 +9850,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (34)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9909,11 +9914,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (34)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -10025,6 +10025,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10085,11 +10090,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (17)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &688128936 stripped
@@ -10105,6 +10105,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10159,11 +10164,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -10330,6 +10330,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (42)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10389,11 +10394,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (42)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -10490,6 +10490,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10545,11 +10550,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (25)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &721075730 stripped
@@ -10600,6 +10600,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10655,11 +10660,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (10)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &725611999 stripped
@@ -10675,6 +10675,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10734,11 +10739,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (23)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -11014,6 +11014,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (37)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11078,11 +11083,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (37)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -11194,6 +11194,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11249,11 +11254,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (12)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &783134310 stripped
@@ -11269,6 +11269,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (45)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11329,11 +11334,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (45)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -11347,6 +11347,99 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 788283033}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &792224929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 603344666407908742, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerPrefab Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603344666407545254, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: AndyGhost
+      value: 
+      objectReference: {fileID: 817216905}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 1939612281}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: gravSubtract
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: slowSubtract
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: stopSubtract
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: teleSubtract
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
 --- !u!1001 &808664515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11842,6 +11935,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (26)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11906,11 +12004,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (26)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -12248,6 +12341,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12303,11 +12401,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (24)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &841687029 stripped
@@ -12323,6 +12416,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12377,11 +12475,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -12558,6 +12651,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12617,11 +12715,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (9)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -12738,6 +12831,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (43)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12798,11 +12896,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (43)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &863992074 stripped
@@ -12818,6 +12911,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (40)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12878,11 +12976,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (40)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &870718609 stripped
@@ -12891,110 +12984,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 870718608}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &888419612
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 898762432423096430, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_Name
-      value: Player_1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 898762432423193678, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4804426878438465177, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: AndyGhost
-      value: 
-      objectReference: {fileID: 817216905}
-    - target: {fileID: 4804426878438465177, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: gravity
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3496137155726127015, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_UseWorldSpace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3496137155726127015, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_Positions.Array.data[0].x
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 3496137155726127015, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_Positions.Array.data[0].y
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3496137155726127015, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_Positions.Array.data[1].x
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 3496137155726127015, guid: 2d22d69c433a8ec47903708ba9d3aed4,
-        type: 3}
-      propertyPath: m_Positions.Array.data[1].y
-      value: -4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2d22d69c433a8ec47903708ba9d3aed4, type: 3}
 --- !u!1001 &891232643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13097,6 +13086,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13157,11 +13151,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &891249298 stripped
@@ -13177,6 +13166,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (36)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13236,11 +13230,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -13353,6 +13342,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13407,11 +13401,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -13503,6 +13492,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (44)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13568,11 +13562,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (44)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -13593,6 +13582,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13647,11 +13641,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -13880,6 +13869,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (33)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13945,11 +13939,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (33)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -13970,6 +13959,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14029,11 +14023,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (19)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -14545,6 +14534,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14604,11 +14598,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -15210,6 +15199,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (49)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15269,11 +15263,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (49)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -15465,6 +15454,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (26)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15520,11 +15514,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (26)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &1059734948 stripped
@@ -15540,6 +15529,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15600,11 +15594,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &1081672649 stripped
@@ -15620,6 +15609,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15675,11 +15669,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1085091100 stripped
@@ -15695,6 +15684,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (35)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15759,11 +15753,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (35)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -15860,6 +15849,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (43)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15919,11 +15913,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (43)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -16025,6 +16014,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (31)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16089,11 +16083,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (31)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -16210,6 +16199,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (39)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16269,11 +16263,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (39)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -16390,6 +16379,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16444,11 +16438,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -16615,6 +16604,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (42)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16680,11 +16674,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (42)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -16705,6 +16694,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (26)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16760,11 +16754,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (26)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1160187668 stripped
@@ -16780,6 +16769,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16835,11 +16829,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (17)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &1162849474 stripped
@@ -16855,6 +16844,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (53)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16915,11 +16909,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (53)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -16940,6 +16929,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17000,11 +16994,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (13)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &1179960336 stripped
@@ -17053,6 +17042,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (28)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17118,11 +17112,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (28)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -17143,6 +17132,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17198,11 +17192,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &1221994583 stripped
@@ -17218,6 +17207,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (41)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17283,11 +17277,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (41)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -17308,6 +17297,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (32)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17362,11 +17356,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (32)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -17548,6 +17537,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17602,11 +17596,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -22970,6 +22959,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23029,11 +23023,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (22)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -28210,6 +28199,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (32)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28265,11 +28259,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (32)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1299261442 stripped
@@ -28285,6 +28274,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28340,11 +28334,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (13)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1299771631 stripped
@@ -28360,6 +28349,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (31)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28415,11 +28409,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (31)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1306070084 stripped
@@ -28435,6 +28424,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28490,11 +28484,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (12)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1312421496 stripped
@@ -28510,6 +28499,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28564,11 +28558,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (21)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -28719,6 +28708,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (46)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28783,11 +28777,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (46)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -29235,6 +29224,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29294,11 +29288,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -29490,6 +29479,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29555,11 +29549,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -29580,6 +29569,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (50)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29644,11 +29638,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (50)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -29820,6 +29809,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29879,11 +29873,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -30065,6 +30054,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (38)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30124,11 +30118,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (38)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -30240,6 +30229,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30300,11 +30294,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -30325,6 +30314,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30380,11 +30374,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (11)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1451827944 stripped
@@ -30400,6 +30389,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30454,11 +30448,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -30645,6 +30634,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30699,11 +30693,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -30795,6 +30784,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30850,11 +30844,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1497156783 stripped
@@ -30870,6 +30859,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (41)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30930,11 +30924,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (41)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &1499632728 stripped
@@ -30950,6 +30939,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31005,11 +30999,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (16)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &1509563712 stripped
@@ -31025,6 +31014,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (30)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31080,11 +31074,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (30)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &1516050666 stripped
@@ -31100,6 +31089,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31164,11 +31158,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (24)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -31285,6 +31274,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31344,11 +31338,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (27)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -31455,6 +31444,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31515,11 +31509,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (21)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &1548654313 stripped
@@ -31535,6 +31524,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (40)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31595,11 +31589,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (40)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -31620,6 +31609,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31674,11 +31668,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -31770,6 +31759,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31825,11 +31819,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -31850,6 +31839,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (55)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31910,11 +31904,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (55)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -31935,6 +31924,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32000,11 +31994,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -32025,6 +32014,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (54)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32090,11 +32084,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (54)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -32115,6 +32104,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (30)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32174,11 +32168,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -32382,6 +32371,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (34)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32437,11 +32431,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (34)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &1655463743 stripped
@@ -32488,6 +32477,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32543,11 +32537,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (14)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &1658766397 stripped
@@ -32563,6 +32552,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32623,11 +32617,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -32648,6 +32637,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32712,11 +32706,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (5)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -32828,6 +32817,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (56)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32893,11 +32887,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (56)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -32918,6 +32907,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32982,11 +32976,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (20)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -33540,6 +33529,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (38)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33599,11 +33593,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -33725,6 +33714,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33785,11 +33779,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (16)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &1758950217 stripped
@@ -33818,7 +33807,7 @@ PrefabInstance:
     - target: {fileID: 898762432423193678, guid: f04b69b97c4a6c94b8da1db0ac9c81aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -23.5
       objectReference: {fileID: 0}
     - target: {fileID: 898762432423193678, guid: f04b69b97c4a6c94b8da1db0ac9c81aa,
         type: 3}
@@ -33874,6 +33863,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33928,11 +33922,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -34119,6 +34108,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34178,11 +34172,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -34893,6 +34882,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34953,11 +34947,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (15)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &1834869887 stripped
@@ -34973,6 +34962,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35033,11 +35027,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -35058,6 +35047,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35117,11 +35111,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -35500,6 +35489,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35554,11 +35548,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -35655,6 +35644,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35719,11 +35713,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (18)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -36005,6 +35994,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36060,11 +36054,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -36115,6 +36104,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36174,11 +36168,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -36599,6 +36588,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (30)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36654,11 +36648,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (30)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1919312505 stripped
@@ -36674,6 +36663,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36728,11 +36722,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -37119,6 +37108,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37173,11 +37167,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
@@ -37284,6 +37273,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Flat_Open-01 (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 30796e58e8ec5a24fba6ea7c48549103,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37339,11 +37333,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 30796e58e8ec5a24fba6ea7c48549103,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Flat_Open-01 (22)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30796e58e8ec5a24fba6ea7c48549103, type: 3}
 --- !u!4 &1977974793 stripped
@@ -37359,6 +37348,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37418,11 +37412,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
@@ -38142,6 +38131,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38197,11 +38191,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &2054609746 stripped
@@ -38217,6 +38206,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (38)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38282,11 +38276,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (38)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &2058740183 stripped
@@ -38302,6 +38291,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38367,11 +38361,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (23)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
 --- !u!4 &2061979419 stripped
@@ -38387,6 +38376,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Fixture (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: e381b19716f3e35449f4a2d83469e2c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38446,11 +38440,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: e381b19716f3e35449f4a2d83469e2c7,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Fixture (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e381b19716f3e35449f4a2d83469e2c7, type: 3}
@@ -39351,6 +39340,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39406,11 +39400,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
 --- !u!4 &2118947696 stripped
@@ -39426,6 +39415,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_Roof_Flat (52)
+      objectReference: {fileID: 0}
     - target: {fileID: 8875649288755793077, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39490,11 +39484,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875649288755793074, guid: 27b3241bb6013ef44bff4820b1acca1a,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_Roof_Flat (52)
       objectReference: {fileID: 0}
     - target: {fileID: 8712695795261554781, guid: 27b3241bb6013ef44bff4820b1acca1a,
         type: 3}
@@ -39601,6 +39590,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1918668186}
     m_Modifications:
+    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
+        type: 3}
+      propertyPath: m_Name
+      value: STAGE_L-Bracket_Roof_Closed (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 1215360052029804631, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39660,11 +39654,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215360052029804630, guid: bee8a39db6cc68e40a090a4a90b6ae8b,
-        type: 3}
-      propertyPath: m_Name
-      value: STAGE_L-Bracket_Roof_Closed (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee8a39db6cc68e40a090a4a90b6ae8b, type: 3}
