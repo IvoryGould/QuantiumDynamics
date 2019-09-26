@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Energy_Bar 1
-  m_Shader: {fileID: 4800000, guid: 78f83e59268dacf4ca1dfbec6551356a, type: 3}
+  m_Name: Wind_Channel_02
+  m_Shader: {fileID: 4800000, guid: 24e2d8f73a954ad498e1eee9c5ec9555, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -21,20 +21,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_2E08FBF9:
-        m_Texture: {fileID: 2800000, guid: 2cb9350da2ce3ff4d8aa6fca5abf8394, type: 3}
+    - Texture2D_8A6824C8:
+        m_Texture: {fileID: 2800000, guid: 97403b3277e4f684bb826ff85b6b4ce7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - Texture2D_5ECC6259:
-        m_Texture: {fileID: 2800000, guid: d77c68093c4e4234fb6d60f5bceb6d1d, type: 3}
+    - Texture2D_C467D53:
+        m_Texture: {fileID: 2800000, guid: d4b21b66a268d344887a824bfb4122da, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - Texture2D_821B63B:
-        m_Texture: {fileID: 2800000, guid: 942088494e8eab0428c295a8943dd842, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_A0860EF0:
-        m_Texture: {fileID: 0}
+    - Texture2D_EB38680C:
+        m_Texture: {fileID: 2800000, guid: 06bae4b55058cf242843a5b5415d4554, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -95,6 +91,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5BB2E168_Texture:
+        m_Texture: {fileID: 2800000, guid: 34597c4566c643342b65e3fda08e9668, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
@@ -234,8 +234,8 @@ Material:
     - _ZTestModeDistortion: 8
     - _ZWrite: 1
     m_Colors:
-    - Color_F17BDD2D: {r: 0, g: 1, b: 0.28550625, a: 0}
-    - Vector2_2EC0C6B9: {r: 0, g: -0.05, b: 0, a: 0}
+    - Vector2_68E78D57: {r: 0, g: -0.5, b: 0, a: 0}
+    - Vector2_79C135BE: {r: 0, g: -0.1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
