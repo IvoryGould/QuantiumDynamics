@@ -50,6 +50,7 @@ public class AndyController : MonoBehaviour {
     private bool drainCalledOnce;
     private float intialPlayerPos; //storage of the players position for jumping
     private QuantumPhysics quantumPhysics;
+    private PlayerCameraController cameraController;
 
     float distToGround;
     float intGravity;
@@ -69,6 +70,7 @@ public class AndyController : MonoBehaviour {
         _lineRenderer = GetComponent<LineRenderer>();
         _animator = GetComponent<Animator>();
         quantumPhysics = Resources.Load("QuantumPhysics") as QuantumPhysics;
+        cameraController = GetComponent<PlayerCameraController>();
 
     }
 
@@ -148,16 +150,18 @@ public class AndyController : MonoBehaviour {
             if (gravityToggle == true) {
 
                 //Physics.gravity = new Vector3(0, 19.62f, 0);
-                this.gravityModifier = -1 / Time.timeScale;
+                this.gravityModifier *= -1 / Time.timeScale;
                 transform.Rotate(0, 180, 180, Space.Self);
                 transform.position = new Vector3(transform.position.x, transform.position.y + 2.5f, transform.position.z);
+                cameraController.CameraOffset.y *= -1;
 
             } else {
 
                 //Physics.gravity = new Vector3(0, -19.62f, 0);
-                this.gravityModifier = 1 / Time.timeScale;
+                this.gravityModifier *= -1 / Time.timeScale;
                 transform.Rotate(0, 180, 180, Space.Self);
                 transform.position = new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z);
+                cameraController.CameraOffset.y *= -1;
 
             }
 
@@ -213,25 +217,25 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("Teleport") /*&& energyBar.fillAmount >= teleSubtract*/) {
+        //if (Input.GetButtonDown("Teleport") /*&& energyBar.fillAmount >= teleSubtract*/) {
 
-            teleportToggle = !teleportToggle;
+        //    teleportToggle = !teleportToggle;
 
-            if (teleportToggle == true) {
+        //    if (teleportToggle == true) {
 
-                _lineRenderer.enabled = true;
-                AndyGhost.GetComponent<MeshRenderer>().enabled = true;
+        //        _lineRenderer.enabled = true;
+        //        AndyGhost.GetComponent<MeshRenderer>().enabled = true;
 
-            } else {
+        //    } else {
 
-                _lineRenderer.enabled = false;
-                AndyGhost.GetComponent<MeshRenderer>().enabled = false;
+        //        _lineRenderer.enabled = false;
+        //        AndyGhost.GetComponent<MeshRenderer>().enabled = false;
 
-            }
+        //    }
 
-        }
+        //}
 
-        Teleport();
+        //Teleport();
 
     }
 
@@ -317,68 +321,68 @@ public class AndyController : MonoBehaviour {
 
     }
 
-    void Teleport()
-    {
+    //void Teleport()
+    //{
 
-        RaycastHit mouseHit;
+    //    RaycastHit mouseHit;
 
-        GhostCollision ghostCollision = AndyGhost.GetComponent<GhostCollision>();
+    //    GhostCollision ghostCollision = AndyGhost.GetComponent<GhostCollision>();
 
-        int distance = 5;
+    //    int distance = 5;
 
-        Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //    Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        Vector3 unitVector = new Vector3();
+    //    Vector3 unitVector = new Vector3();
 
-        if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out mouseHit, Mathf.Infinity, layerMask)) {
+    //    if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out mouseHit, Mathf.Infinity, layerMask)) {
 
-            float dX = (mouseHit.point.x - transform.position.x) * (mouseHit.point.x - transform.position.x);
-            float dY = (mouseHit.point.y - transform.position.y) * (mouseHit.point.y - transform.position.y);
+    //        float dX = (mouseHit.point.x - transform.position.x) * (mouseHit.point.x - transform.position.x);
+    //        float dY = (mouseHit.point.y - transform.position.y) * (mouseHit.point.y - transform.position.y);
 
-            float pointDistance = Mathf.Sqrt(dX + dY);
+    //        float pointDistance = Mathf.Sqrt(dX + dY);
 
-            unitVector.x = (mouseHit.point.x - this.transform.position.x) / pointDistance;
-            unitVector.y = (mouseHit.point.y - this.transform.position.y) / pointDistance;
+    //        unitVector.x = (mouseHit.point.x - this.transform.position.x) / pointDistance;
+    //        unitVector.y = (mouseHit.point.y - this.transform.position.y) / pointDistance;
 
-            if (pointDistance > distance) {
+    //        if (pointDistance > distance) {
 
-                _lineRenderer.SetPosition(1, this.transform.position + (distance * unitVector));
+    //            _lineRenderer.SetPosition(1, this.transform.position + (distance * unitVector));
 
-            } else {
+    //        } else {
 
-                _lineRenderer.SetPosition(1, new Vector3(mouseHit.point.x, mouseHit.point.y, transform.position.z));
+    //            _lineRenderer.SetPosition(1, new Vector3(mouseHit.point.x, mouseHit.point.y, transform.position.z));
 
-            }
+    //        }
 
-            if(teleportToggle)
-                AndyGhost.transform.position = _lineRenderer.GetPosition(1);
+    //        if(teleportToggle)
+    //            AndyGhost.transform.position = _lineRenderer.GetPosition(1);
 
-            if (ghostCollision.isColliding == true)
-                AndyGhost.GetComponent<Renderer>().material.color = new Color(255, 0, 0, 45);
-            else
-                AndyGhost.GetComponent<Renderer>().material.color = new Color(0, 0, 255, 45);
+    //        if (ghostCollision.isColliding == true)
+    //            AndyGhost.GetComponent<Renderer>().material.color = new Color(255, 0, 0, 45);
+    //        else
+    //            AndyGhost.GetComponent<Renderer>().material.color = new Color(0, 0, 255, 45);
 
-            if (Input.GetButtonDown("Fire1") && teleportToggle == true && ghostCollision.isColliding == false) {
+    //        if (Input.GetButtonDown("Fire1") && teleportToggle == true && ghostCollision.isColliding == false) {
 
-                energyBar.fillAmount -= teleSubtract;
+    //            energyBar.fillAmount -= teleSubtract;
 
-                if (fillCalledOnce == false) {
+    //            if (fillCalledOnce == false) {
 
-                    fillCalledOnce = true;
-                    StartCoroutine(EnergyFill());
+    //                fillCalledOnce = true;
+    //                StartCoroutine(EnergyFill());
 
-                }
+    //            }
 
-                this.transform.position = _lineRenderer.GetPosition(1);
-                teleportToggle = false;
-                _lineRenderer.enabled = false;
-                AndyGhost.GetComponent<MeshRenderer>().enabled = false;
+    //            this.transform.position = _lineRenderer.GetPosition(1);
+    //            teleportToggle = false;
+    //            _lineRenderer.enabled = false;
+    //            AndyGhost.GetComponent<MeshRenderer>().enabled = false;
 
-            }
+    //        }
              
-        }
+    //    }
 
-    }
+    //}
 
     IEnumerator EnergyFill() {
 
