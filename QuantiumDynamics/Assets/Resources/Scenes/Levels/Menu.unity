@@ -967,7 +967,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 618240147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aa1cb1622f866146979767ae33faae4, type: 3}
+  m_Script: {fileID: 11500000, guid: 11dbce2afe9922c4481609044226d1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movement: -0.5
@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1120756703}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78e2080c89b9c0a46be1f86ea69e6aea, type: 3}
+  m_Script: {fileID: 11500000, guid: ca734b0c4f0490140b828f664510d770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1120756705

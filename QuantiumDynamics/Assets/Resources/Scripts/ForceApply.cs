@@ -5,7 +5,10 @@ using UnityEngine;
 public class ForceApply : MonoBehaviour
 {
 
-    float force;
+    public float force;
+
+    private bool trigger;
+    private Collider colliderToPush;
 
     // Start is called before the first frame update
     void Start()
@@ -16,12 +19,29 @@ public class ForceApply : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    private void OnTriggerStay(Collider other) {
+    private void FixedUpdate() {
+        
+        if (trigger == true) {
 
-        other.attachedRigidbody.AddForce(new Vector3(0, force, 0), ForceMode.Acceleration);
+            colliderToPush.attachedRigidbody.AddForce(new Vector3(0, force, 0), ForceMode.Acceleration);
+
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider other) {
+
+        colliderToPush = other;
+        trigger = true;
+
+    }
+
+    private void OnTriggerExit(Collider other) {
+
+        trigger = false;
 
     }
 
