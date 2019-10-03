@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForceApply : MonoBehaviour
+public class ForceApplyController : MonoBehaviour
 {
 
     public float force;
@@ -27,8 +27,7 @@ public class ForceApply : MonoBehaviour
         if (trigger == true) {
 
             colliderToPush.attachedRigidbody.AddForce(new Vector3(0, force, 0), ForceMode.Acceleration);
-
-        }
+            }
 
     }
 

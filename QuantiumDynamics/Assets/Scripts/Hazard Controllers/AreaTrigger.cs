@@ -55,6 +55,10 @@ public class AreaTrigger : MonoBehaviour
 
     public void Activate()
     {
+        foreach (GameObject go in EnvironmentObjects)
+        {
+            go.SetActive(true);
+        }
         // enable all game objects here
     }
 

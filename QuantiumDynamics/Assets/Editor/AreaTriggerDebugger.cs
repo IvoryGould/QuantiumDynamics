@@ -102,8 +102,8 @@ public class AreaTriggerDebugger : Editor
                     //            _dependancy2.Activated = true;
                     //        }
                     //    }
-                        EditorGUILayout.PropertyField(isActive);
-                        break;
+                        //EditorGUILayout.PropertyField(isActive);
+                        //break;
                 }
                 
                 
@@ -115,9 +115,10 @@ public class AreaTriggerDebugger : Editor
                         _dependancy.isActive = false;
                         _dependancy.Deactivate();
                     }
-                    else if (!_dependancy.isActive)
+
+                    if (!_dependancy.isActive)
                     {
-                        _dependancy.isActive= true;
+                        _dependancy.isActive = true;
                         _dependancy.Activate();
                     }
                 }
