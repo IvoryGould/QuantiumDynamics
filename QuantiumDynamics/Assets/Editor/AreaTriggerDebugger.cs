@@ -8,39 +8,29 @@ using UnityEditor;
 public class AreaTriggerDebugger : Editor
 {
     private AreaTrigger _dependancy;
-    private LaserWallController _dependancy2;
-    private SerializedObject _soDependancy, _soDependancy2;
+    private SerializedObject _soDependancy;
 
-    private SerializedProperty HazardType, LaserWall, EnvironmentObjects, isActive, Activated, Destination, Speed, ReturnTime, MovementType;
+    private SerializedProperty HazardType, EnvironmentObjects, isActive;
 
     private void OnEnable()
     {
         _dependancy = (AreaTrigger)target;
         _soDependancy = new SerializedObject(target);
 
-        //_dependancy2 = (LaserWallController)target;
-        //_soDependancy2 = new SerializedObject(target);
-
         HazardType = _soDependancy.FindProperty("HazardType");
-        LaserWall = _soDependancy.FindProperty("LaserWall");
         EnvironmentObjects = _soDependancy.FindProperty("EnvironmentObjects");
         isActive = _soDependancy.FindProperty("isActive");
-        
-        //Activated = _soDependancy2.FindProperty("Activated");
-        //Destination = _soDependancy2.FindProperty("Destination");
-        //Speed = _soDependancy2.FindProperty("Speed");
-        //ReturnTime = _soDependancy2.FindProperty("ReturnTime");
-        //MovementType = _soDependancy2.FindProperty("MovementType");
         
     }
     public override void OnInspectorGUI()
     {
-        _soDependancy.Update();
-        EditorGUI.BeginChangeCheck();
+        ChangeCheckStart();
 
+        // constructs toolbar tab for Variables and Debugging
         _dependancy._toolbarTab = GUILayout.Toolbar(_dependancy._toolbarTab, new string[] { "Variables", "Debugging" });
 
-        switch (_dependancy._toolbarTab)                // Switch that declares which tab is selected.
+        // Switch that declares which tab is selected.
+        switch (_dependancy._toolbarTab)                
         {
             case 0:
                 _dependancy._currentTab = "Variables";
@@ -50,64 +40,46 @@ public class AreaTriggerDebugger : Editor
                 break;
         }
 
-        if (EditorGUI.EndChangeCheck())
-        {
-            _soDependancy.ApplyModifiedProperties();
-            GUI.FocusControl(null);
-        }
+        ChangeCheckStop();
+        ChangeCheckStart();
 
-        _soDependancy.Update();
-        EditorGUI.BeginChangeCheck();
-
-        switch (_dependancy._currentTab)                // Switch that displays which variables are exposed in each tab
+        // Switch that displays which variables are exposed in each tab
+        switch (_dependancy._currentTab)                
         {
             case "Variables":
 
-                EditorGUILayout.PropertyField(HazardType);
-                switch (_dependancy.HazardType)
-                {
-                    case AreaTrigger.ObjectSelection.LaserWall:
-                        EditorGUILayout.PropertyField(LaserWall);
-                        break;
+                EditorGUILayout.Foldout(true, "Environent Objects", EditorStyles.foldout);
 
-                    case AreaTrigger.ObjectSelection.Environment:
-                        EditorGUILayout.PropertyField(EnvironmentObjects, true);
-                        break;
+                // For each environment object declared, add setactive tag.
+                for (int i = 0; i < _dependancy.EnvironmentObjects.Count; i++)
+                {
+
+                    GUILayout.BeginHorizontal();
+                    _dependancy.EnvironmentObjects[i] = (GameObject)EditorGUILayout.ObjectField(_dependancy.EnvironmentObjects[i], typeof(GameObject), true);
+                    if (_dependancy.EnvironmentObjects[i])
+                    {
+                        _dependancy.EnvironmentObjects[i].SetActive(EditorGUILayout.Toggle(_dependancy.EnvironmentObjects[i].activeInHierarchy));
+                    }
+                    GUILayout.EndHorizontal();
                 }
+
+
+                // Buttons to add Gameobject Fields to the Environment Llist
+                EditorGUILayout.BeginHorizontal();
+                if (GUILayout.Button("Add Field"))
+                {
+                    _dependancy.EnvironmentObjects.Add(null);
+                }
+                if (GUILayout.Button("Remove Field"))
+                {
+                    _dependancy.EnvironmentObjects.RemoveAt(_dependancy.EnvironmentObjects.Count - 1);
+                }
+                EditorGUILayout.EndHorizontal();
+
                 break;
 
             case "Debugging":
-                switch (_dependancy.HazardType)
-                {
-                    case AreaTrigger.ObjectSelection.LaserWall:
-                        _dependancy.isActive = false;
-                        EditorGUILayout.PropertyField(isActive);
-                        break;
-                    //case AreaTrigger.ObjectSelection.Environment:
-                    //    _dependancy.isActive = true;
-                    //    EditorGUILayout.PropertyField(Speed);
-                    //    if (GUILayout.Button("Reset"))
-                    //    {
-                    //        _dependancy2.Activated = false;
-                    //        _dependancy2.ResetLaser();
-                    //    }
-                    //    if (GUILayout.Button("Activate/Deactivate"))
-                    //    {
-                    //        if (_dependancy2.Activated)
-                    //        {
-                    //            _dependancy2.Activated = false;
-                    //        }
-                    //        else if (!_dependancy2.Activated)
-                    //        {
-                    //            _dependancy2.Activated = true;
-                    //        }
-                    //    }
-                        //EditorGUILayout.PropertyField(isActive);
-                        //break;
-                }
-                
-                
-                
+                                
                 if (GUILayout.Button("Activate/Deactivate"))
                 {
                     if (_dependancy.isActive)
@@ -116,7 +88,7 @@ public class AreaTriggerDebugger : Editor
                         _dependancy.Deactivate();
                     }
 
-                    if (!_dependancy.isActive)
+                    else if (!_dependancy.isActive)
                     {
                         _dependancy.isActive = true;
                         _dependancy.Activate();
@@ -125,6 +97,17 @@ public class AreaTriggerDebugger : Editor
                 break;
         }
 
+        ChangeCheckStop();
+    }
+
+    private void ChangeCheckStart()
+    {
+        _soDependancy.Update();
+        EditorGUI.BeginChangeCheck();
+    }
+
+    private void ChangeCheckStop()
+    {
         if (EditorGUI.EndChangeCheck())
         {
             _soDependancy.ApplyModifiedProperties();

@@ -11,9 +11,9 @@ public class AreaTrigger : MonoBehaviour
     public GameObject LaserWall;
     [Tooltip("Array of Environmental Assets that will animate")]
     [SerializeField]
-    public GameObject[] EnvironmentObjects;
+    public List<GameObject> EnvironmentObjects = new List<GameObject>();
     [Tooltip("Boolean to display if objects are active - debugging")]
-    public bool isActive = true;
+    public bool isActive;
 
 
     //private Collider Player;
@@ -34,8 +34,6 @@ public class AreaTrigger : MonoBehaviour
             case ObjectSelection.Environment:
                 break;
         }
-
-        
     }
 
     void OnTriggerEnter(Collider player)
@@ -57,6 +55,7 @@ public class AreaTrigger : MonoBehaviour
     {
         foreach (GameObject go in EnvironmentObjects)
         {
+            
             go.SetActive(true);
         }
         // enable all game objects here
