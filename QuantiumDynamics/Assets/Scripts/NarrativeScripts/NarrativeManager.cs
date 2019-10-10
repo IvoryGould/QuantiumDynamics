@@ -38,12 +38,13 @@ public class NarrativeManager : MonoBehaviour
     public string jasonIDCardJourn;
     private GameObject journalBox; 
     private TextMeshProUGUI journalBoxTxt;
-    private Scene currentScene;
+    public Scene currentScene;
 
     void Awake()
     {
+        //If it exists already, delete the new instance
         narrativeManager = Object.FindObjectsOfType<NarrativeManager>();
-        if (narrativeManager.Length<=1)
+        if (narrativeManager.Length>=2)
         {
             Destroy(this);
         }
@@ -52,7 +53,6 @@ public class NarrativeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentScene = SceneManager.GetActiveScene();
         terminals = new List<bool>();
         items = new List<bool>();
         logs = new List<bool>();
@@ -75,13 +75,18 @@ public class NarrativeManager : MonoBehaviour
         items.Add(vHSTape);
         vHSTapeJourn = "I don’t even know what this is. It seems to encode images onto a magnetic strip, but we haven’t used that kind of storage for anything like that here; we only use that for data storage, and they don’t look like this. Reading it as best I can, it seems to have lots of similar pictures of Ryan, but not as I’ve known him. I wonder what it could be.";
         items.Add(jasonIDCard);
-        jasonIDCardJourn = "Jason’s ID card for the lab. It looks like it got caught on something and ripped off the clip. He hasn’t mentioned it was missing, so I guess it just happened. Hopefully he isn’t freaking out about it; he seems to get pretty worried about some things. I’ll give it to him when I see him.";
+        jasonIDCardJourn = "Jason’s ID card for the lab. It looks like it got caught on something and ripped off the clip. He hasn’t mentioned it was missing, so I guess it just happened. Hopefully he isn’t freaking out about it; he seems to get pretty worried about some things, even when he’s told he doesn’t need to worry. I’ll give it to him when I see him.";
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Pause"))
         {
-            if(currentScene.buildIndex!=0)
+            currentScene = SceneManager.GetActiveScene();
+            if (currentScene.buildIndex==0)
+            {
+                Application.Quit();
+            }
+            else
             {
                 SceneManager.LoadScene(0);
             }
