@@ -7,6 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class BinaryIO : MonoBehaviour
 {
 
+    public BoolData boolData;
     public NarrativeManager narrativeManager;
     const string folderName = "BinarySaveData";
     const string fileExtension = ".dat";
@@ -15,12 +16,14 @@ public class BinaryIO : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F7)) {
 
-            string folderPath = Path.Combine(Application.persistentDataPath, folderName);
+            narrativeManager.CheckBools();
+
+            string folderPath = Application.persistentDataPath + "/" + folderName;
             if (!Directory.Exists(folderPath))
                 Directory.CreateDirectory(folderPath);
 
-            string dataPath = Path.Combine(folderPath, "SaveData" + fileExtension);
-            SaveData(narrativeManager, dataPath);
+            string dataPath = folderPath + '/' + "SaveData" + fileExtension;
+            SaveData(boolData, dataPath);
 
         }
 
@@ -28,14 +31,16 @@ public class BinaryIO : MonoBehaviour
 
             string[] filePaths = GetFilePaths();
 
-            if (filePaths.Length > 0)
-                narrativeManager = LoadData(filePaths[0]);
+            if (File.Exists(Application.persistentDataPath + "/" + folderName + "/" + "SaveData.dat"))
+                boolData = LoadData(filePaths[0]);
+
+            narrativeManager.LoadBools();
 
         }
 
     }
 
-    static void SaveData(NarrativeManager data, string path) {
+    static void SaveData(BoolData data, string path) {
 
         BinaryFormatter binaryFormatter = new BinaryFormatter();
 
@@ -47,13 +52,13 @@ public class BinaryIO : MonoBehaviour
 
     }
 
-    static NarrativeManager LoadData(string path) {
+    static BoolData LoadData(string path) {
 
         BinaryFormatter binaryFormatter = new BinaryFormatter();
 
         using (FileStream fileStream = File.Open(path, FileMode.Open)) {
 
-            return (NarrativeManager)binaryFormatter.Deserialize(fileStream);
+            return (BoolData)binaryFormatter.Deserialize(fileStream);
 
         }
 
@@ -61,9 +66,9 @@ public class BinaryIO : MonoBehaviour
 
     static string[] GetFilePaths() {
 
-        string folderPath = Path.Combine(Application.persistentDataPath, folderName);
+        string folderPath = Application.persistentDataPath + "/" + folderName;
 
-        return Directory.GetFiles(folderPath, fileExtension);
+        return Directory.GetFiles(folderPath);
 
     }
 

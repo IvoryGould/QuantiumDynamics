@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
+
+[Serializable]
 
 public class NarrativeManager : MonoBehaviour
 {
+
+    public BinaryIO binaryIO;
     private NarrativeManager[] narrativeManager;
     //List of all terminals
     [HideInInspector]
@@ -42,20 +47,24 @@ public class NarrativeManager : MonoBehaviour
 
     void Awake()
     {
+
         //If it exists already, delete the new instance
-        narrativeManager = Object.FindObjectsOfType<NarrativeManager>();
+        narrativeManager = UnityEngine.Object.FindObjectsOfType<NarrativeManager>();
         if (narrativeManager.Length>=2)
         {
             Destroy(this);
         }
-        Object.DontDestroyOnLoad(this.gameObject);
+        UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
+
     }
     // Start is called before the first frame update
     void Start()
     {
+
         terminals = new List<bool>();
         items = new List<bool>();
         logs = new List<bool>();
+
         terminals.Add(entry);
         entryJourn = "Test 487. \n\nGravity test 128 \n\nAbilities disabled to start, activate in backup chamber";
         terminals.Add(gravAct);
@@ -76,6 +85,7 @@ public class NarrativeManager : MonoBehaviour
         vHSTapeJourn = "I don’t even know what this is. It seems to encode images onto a magnetic strip, but we haven’t used that kind of storage for anything like that here; we only use that for data storage, and they don’t look like this. Reading it as best I can, it seems to have lots of similar pictures of Ryan, but not as I’ve known him. I wonder what it could be.";
         items.Add(jasonIDCard);
         jasonIDCardJourn = "Jason’s ID card for the lab. It looks like it got caught on something and ripped off the clip. He hasn’t mentioned it was missing, so I guess it just happened. Hopefully he isn’t freaking out about it; he seems to get pretty worried about some things, even when he’s told he doesn’t need to worry. I’ll give it to him when I see him.";
+
     }
     void Update()
     {
@@ -92,4 +102,70 @@ public class NarrativeManager : MonoBehaviour
             }
         }
     }
+
+    public void CheckBools() {
+
+        if (binaryIO.boolData.terminals.Count == 0) {
+
+            binaryIO.boolData.terminals.Add(entry);
+            binaryIO.boolData.terminals.Add(gravAct);
+            binaryIO.boolData.terminals.Add(end);
+
+        } else {
+
+            binaryIO.boolData.terminals[0] = entry;
+            binaryIO.boolData.terminals[1] = gravAct;
+            binaryIO.boolData.terminals[2] = end;
+
+        }
+
+        if (binaryIO.boolData.items.Count == 0) {
+
+            binaryIO.boolData.items.Add(keyChip);
+            binaryIO.boolData.items.Add(ryanIDCard);
+            binaryIO.boolData.items.Add(vHSTape);
+            binaryIO.boolData.items.Add(jasonIDCard);
+
+        } else {
+
+            binaryIO.boolData.items[0] = keyChip;
+            binaryIO.boolData.items[1] = ryanIDCard;
+            binaryIO.boolData.items[2] = vHSTape;
+            binaryIO.boolData.items[3] = jasonIDCard;
+
+        }
+
+        if (binaryIO.boolData.logs.Count == 0) {
+
+            binaryIO.boolData.logs.Add(ryanPortable1);
+            binaryIO.boolData.logs.Add(jasonPortable1);
+            binaryIO.boolData.logs.Add(ryanPortable2);
+
+        } else {
+
+            binaryIO.boolData.logs[0] = ryanPortable1;
+            binaryIO.boolData.logs[1] = jasonPortable1;
+            binaryIO.boolData.logs[2] = ryanPortable2;
+
+        }
+
+    }
+
+    public void LoadBools() {
+
+       entry = binaryIO.boolData.terminals[0];
+       gravAct = binaryIO.boolData.terminals[1];
+       end = binaryIO.boolData.terminals[2];
+
+        keyChip = binaryIO.boolData.items[0];
+        ryanIDCard = binaryIO.boolData.items[1];
+        vHSTape = binaryIO.boolData.items[2];
+        jasonIDCard = binaryIO.boolData.items[3];
+
+        ryanPortable1 = binaryIO.boolData.logs[0];
+        jasonPortable1 = binaryIO.boolData.logs[1];
+        ryanPortable2 = binaryIO.boolData.logs[2];
+
+    }
+
 }

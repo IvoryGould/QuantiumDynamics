@@ -981,6 +981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 698762782}
   - component: {fileID: 698762781}
+  - component: {fileID: 698762783}
   m_Layer: 0
   m_Name: NarrativeManager
   m_TagString: Untagged
@@ -1000,9 +1001,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9506580e2aa601949b2a0278300f479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terminals: 
-  items: 
-  logs: 
+  boolData:
+    items: 
+    terminals: 
+    logs: 
   entry: 0
   entryJourn: 
   gravAct: 0
@@ -1023,6 +1025,8 @@ MonoBehaviour:
   vHSTapeJourn: 
   jasonIDCard: 0
   jasonIDCardJourn: 
+  currentScene:
+    m_Handle: 0
 --- !u!4 &698762782
 Transform:
   m_ObjectHideFlags: 0
@@ -1037,6 +1041,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &698762783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698762780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdd1815de7ae0247b2699b4076f58d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  narrativeManager:
+    items: 
+    terminals: 
+    logs: 
 --- !u!1 &756537695
 GameObject:
   m_ObjectHideFlags: 0
