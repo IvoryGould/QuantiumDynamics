@@ -6,12 +6,22 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class BinaryIO : MonoBehaviour
 {
-
+    private BinaryIO[] binaryIO;
     public BoolData boolData;
     public NarrativeManager narrativeManager;
     const string folderName = "BinarySaveData";
     const string fileExtension = ".dat";
-
+    private void Start()
+    {
+        narrativeManager = UnityEngine.Object.FindObjectOfType<NarrativeManager>();
+        //If it exists already, delete the new instance
+        binaryIO = UnityEngine.Object.FindObjectsOfType<BinaryIO>();
+        if (binaryIO.Length >= 2)
+        {
+            Destroy(this);
+        }
+        UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
+    }
     private void Update() {
 
         if (Input.GetKeyDown(KeyCode.F7)) {

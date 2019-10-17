@@ -47,7 +47,6 @@ public class NarrativeManager : MonoBehaviour
 
     void Awake()
     {
-
         //If it exists already, delete the new instance
         narrativeManager = UnityEngine.Object.FindObjectsOfType<NarrativeManager>();
         if (narrativeManager.Length>=2)
@@ -60,7 +59,7 @@ public class NarrativeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        binaryIO = UnityEngine.Object.FindObjectOfType<BinaryIO>();
         terminals = new List<bool>();
         items = new List<bool>();
         logs = new List<bool>();

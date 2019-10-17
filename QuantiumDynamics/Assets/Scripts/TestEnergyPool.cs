@@ -27,6 +27,7 @@ public class TestEnergyPool : MonoBehaviour
     private float energyRegen;
     [SerializeField]
     private TextMeshProUGUI textBox;
+    private float normalise;
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +59,8 @@ public class TestEnergyPool : MonoBehaviour
             timeStopped = false;
             timeSlowed = false;
         }
-        textBox.text = energyPool.ToString();
+        normalise = energyPool / 90f;
+        textBox.text = normalise.ToString();
     }
     public void GravFlip()
     {

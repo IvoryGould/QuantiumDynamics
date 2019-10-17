@@ -10,11 +10,14 @@ public class MenuButtons : MonoBehaviour
     private GameObject mainMenu;
     [SerializeField]
     private GameObject optionsMenu;
+    [SerializeField]
+    private GameObject audioMenu;
     // Start is called before the first frame update
     void Start()
     {
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
+        audioMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,7 +43,18 @@ public class MenuButtons : MonoBehaviour
     }
     public void Back()
     {
-        optionsMenu.SetActive(false);
-        mainMenu.SetActive(true);
+        if (audioMenu.activeSelf == true)
+        {
+            audioMenu.SetActive(false);
+        }
+        else
+        {
+            optionsMenu.SetActive(false);
+            mainMenu.SetActive(true);
+        }
+    }
+    public void Audio()
+    {
+        audioMenu.SetActive(true);
     }
 }
