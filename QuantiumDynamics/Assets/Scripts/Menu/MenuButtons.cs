@@ -6,11 +6,15 @@ using UnityEngine.UI;
 
 public class MenuButtons : MonoBehaviour
 {
-
+    [SerializeField]
+    private GameObject mainMenu;
+    [SerializeField]
+    private GameObject optionsMenu;
     // Start is called before the first frame update
     void Start()
     {
-        
+        mainMenu.SetActive(true);
+        optionsMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,5 +32,15 @@ public class MenuButtons : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+    public void Options()
+    {
+        mainMenu.SetActive(false);
+        optionsMenu.SetActive(true);
+    }
+    public void Back()
+    {
+        optionsMenu.SetActive(false);
+        mainMenu.SetActive(true);
     }
 }
