@@ -37,16 +37,8 @@ Material:
         m_Texture: {fileID: 2800000, guid: e7e317c4b1681374f9da5802e528b24a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - Texture2D_AA43A279:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - Texture2D_B763C527:
         m_Texture: {fileID: 2800000, guid: 84e7a8a00c4e2db498a6c9537a0fc03b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_E009402A:
-        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -107,10 +99,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_589DD96E_Texture:
-        m_Texture: {fileID: 2800000, guid: 5d00c2cf083c33f47b55800dab59760e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
@@ -253,10 +241,8 @@ Material:
     - _ZTestModeDistortion: 8
     - _ZWrite: 1
     m_Colors:
-    - Color_924FC435: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 0}
     - Color_BC342334: {r: 0, g: 1.4974027, b: 2.1185474, a: 0}
     - Vector2_59B88EB6: {r: 0, g: 0.15, b: 0, a: 0}
-    - Vector2_D1411A21: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
