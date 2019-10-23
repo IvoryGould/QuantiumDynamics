@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
-[RequireComponent(typeof(LineRenderer))]
+//[RequireComponent(typeof(LineRenderer))]
 public class AndyController : MonoBehaviour {
 
     Rigidbody _rigidbody; //players member rigidbody
-    LineRenderer _lineRenderer; //players member linerenderer
+    //LineRenderer _lineRenderer; //players member linerenderer
     Animator _animator;
     DeathCollision deathCollision;
     Text deathText;
@@ -69,7 +69,7 @@ public class AndyController : MonoBehaviour {
     {
 
         _rigidbody = GetComponent<Rigidbody>();
-        _lineRenderer = GetComponent<LineRenderer>();
+        //_lineRenderer = GetComponent<LineRenderer>();
         _animator = GetComponent<Animator>();
         quantumPhysics = Resources.Load("QuantumPhysics") as QuantumPhysics;
         cameraController = GetComponent<PlayerCameraController>();
@@ -85,7 +85,7 @@ public class AndyController : MonoBehaviour {
         quantumPhysics.timeModifier = 1;
         distToGround = GetComponent<CapsuleCollider>().bounds.extents.y;
         Time.timeScale = 1;
-        _lineRenderer.enabled = false;
+        //_lineRenderer.enabled = false;
         intGravity = gravity;
         deathText.enabled = false;
 
@@ -108,7 +108,7 @@ public class AndyController : MonoBehaviour {
         }
 
         //Movement();
-        _lineRenderer.SetPosition(0, this.transform.position);
+        //_lineRenderer.SetPosition(0, this.transform.position);
 
         if (IsGrounded()) {
 

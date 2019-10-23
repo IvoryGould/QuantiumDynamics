@@ -76,7 +76,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3.3157277
+  m_Intensity: 0.33157277
   m_Range: 20
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -99,7 +99,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4.8, y: 0.01}
   m_BounceIntensity: 1
-  m_ColorTemperature: 7500
+  m_ColorTemperature: 6000
   m_UseColorTemperature: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 200
+  displayLightIntensity: 20
   displayAreaLightEmissiveMesh: 0
   lightLayers: 1
   shadowNearPlane: 0.1
@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: ce81f345fdfca784397430e363a7cc45, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 732f7e4eafac356498cdf242c72f5220, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce81f345fdfca784397430e363a7cc45, type: 3}
 --- !u!4 &879757521060137600 stripped
