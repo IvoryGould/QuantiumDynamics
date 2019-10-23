@@ -4,88 +4,112 @@ using UnityEngine;
 
 public class LaserWallController : MonoBehaviour
 {
-    public enum Movement { Constant, Lerp };
 
-    public Movement MovementType;
+    Transform waypointOne;
+    Transform waypointTwo;
 
-    [Header("GameObjects")]
-    [Tooltip("GameObject that will be moved")]
-    public GameObject LaserWall;
-    [Tooltip("Destination point where GameObject will move to")]
-    public Transform Destination;
-    [Header("Variables")]
-    [Tooltip("Speed of which the laser wall will move.")]
-    public float Speed;
-    [Tooltip("Length of time until wall resets")]
-    public float ReturnTime;
+    public float moveSpeed;
 
-    [HideInInspector]
-    public bool Activated;
-    [HideInInspector]
-    public int _toolbarTab;
-    [HideInInspector]
-    public string _currentTab;
-    [HideInInspector]
-    public Vector3 _origin;
-    private float _timer;
+    private Rigidbody _rigidbody;
+    private Vector3 startPosition;
 
-    private bool calledOnce = false;
-    
-    void Start()
-    {
-        Activated = false;
+    PhysicsObject physicsObject;
+    TriggerArea triggerArea;
+
+    bool hasHitOne;
+    bool hasHitTwo;
+
+    public enum LAZERTYPE {
+
+        Stationary,
+        NonTrigger,
+        Trigger
+
+    }
+
+    public LAZERTYPE lazerType;
+
+    private void Awake() {
+
+        _rigidbody = GetComponent<Rigidbody>();
+        waypointOne = this.transform.parent.GetChild(0);
+        waypointTwo = this.transform.parent.GetChild(1);
+        physicsObject = GetComponent<PhysicsObject>();
+        triggerArea = transform.parent.GetChild(3).GetComponent<TriggerArea>();
+
+    }
+
+    private void Start() {
+
+    }
+
+    private void Update() {
         
-        _origin = LaserWall.transform.position;
+
+
     }
 
-    void Update()
-    {
-        switch (Activated)
-        {
-            case true:
-                switch (MovementType)
-                {
-                    case Movement.Constant:
-                        LaserWall.transform.position = Vector3.MoveTowards(LaserWall.transform.position, Destination.position, Speed / 1000);
-                        break;
-                    case Movement.Lerp:
+    private void FixedUpdate() {
 
-                        if (LaserWall.transform.position != Destination.position && calledOnce == false) {
+        if (lazerType == LAZERTYPE.NonTrigger) {
 
-                            LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, Destination.position, Speed / 100);
+            if (hasHitOne == false) {
 
-                        }
+                transform.position = Vector3.MoveTowards(transform.position, waypointOne.position, moveSpeed * physicsObject.quantumPhysics.timeModifier * Time.fixedDeltaTime);
 
-                        if (calledOnce == false) {
+                if (transform.position == waypointOne.position) {
 
-                            StartCoroutine(LerpMovement(ReturnTime));
+                    hasHitOne = true;
+                    hasHitTwo = false;
 
-                        }
-
-                        break;
                 }
-                break;
-        }
-    }
 
-    public void ResetLaser()
-    {
-        LaserWall.transform.position = _origin;
-    }
+            } else if (hasHitTwo == false){
 
-    IEnumerator LerpMovement(float time) {
+                transform.position = Vector3.MoveTowards(transform.position, waypointTwo.position, moveSpeed * physicsObject.quantumPhysics.timeModifier * Time.fixedDeltaTime);
 
-        calledOnce = true;
+                if (transform.position == waypointTwo.position) {
 
-        yield return new WaitForSeconds(time);
+                    hasHitTwo = true;
+                    hasHitOne = false;
 
-        if (LaserWall.transform.position != _origin) {
+                }
 
-            LaserWall.transform.position = Vector3.Lerp(LaserWall.transform.position, _origin, Speed / 100);
+            }
 
         }
 
-        calledOnce = false;
+        if (lazerType == LAZERTYPE.Trigger) {
+
+            if (triggerArea.Triggered == true) {
+
+                if (hasHitOne == false) {
+
+                    transform.position = Vector3.MoveTowards(transform.position, waypointOne.position, moveSpeed * physicsObject.quantumPhysics.timeModifier * Time.fixedDeltaTime);
+
+                    if (transform.position == waypointOne.position) {
+
+                        hasHitOne = true;
+                        hasHitTwo = false;
+
+                    }
+
+                } else if (hasHitTwo == false) {
+
+                    transform.position = Vector3.MoveTowards(transform.position, waypointTwo.position, moveSpeed * physicsObject.quantumPhysics.timeModifier * Time.fixedDeltaTime);
+
+                    if (transform.position == waypointTwo.position) {
+
+                        hasHitTwo = true;
+                        hasHitOne = false;
+
+                    }
+
+                }
+
+            }
+
+        }
 
     }
 

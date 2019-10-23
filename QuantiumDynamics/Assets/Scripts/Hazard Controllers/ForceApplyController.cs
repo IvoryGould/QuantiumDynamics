@@ -10,6 +10,15 @@ public class ForceApplyController : MonoBehaviour
     private bool trigger;
     private Collider colliderToPush;
 
+    public enum FANTYPE {
+
+        Push,
+        Suck
+
+    }
+
+    public FANTYPE fanType;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +32,16 @@ public class ForceApplyController : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        
+
         if (trigger == true) {
 
-            colliderToPush.attachedRigidbody.AddForce(new Vector3(0, force, 0), ForceMode.Acceleration);
-            }
+            if(fanType == FANTYPE.Push)
+                colliderToPush.attachedRigidbody.AddForce(new Vector3(0, force, 0), ForceMode.Acceleration);
+            else if(fanType == FANTYPE.Suck)
+                colliderToPush.attachedRigidbody.AddForce(new Vector3(0, -force, 0), ForceMode.Acceleration);
+
+
+        }
 
     }
 

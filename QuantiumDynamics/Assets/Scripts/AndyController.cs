@@ -12,6 +12,8 @@ public class AndyController : MonoBehaviour {
     Rigidbody _rigidbody; //players member rigidbody
     LineRenderer _lineRenderer; //players member linerenderer
     Animator _animator;
+    DeathCollision deathCollision;
+    Text deathText;
 
     [Header("Generic")]
     [Tooltip("The holographic render of the character for teleport feedback")]
@@ -71,6 +73,8 @@ public class AndyController : MonoBehaviour {
         _animator = GetComponent<Animator>();
         quantumPhysics = Resources.Load("QuantumPhysics") as QuantumPhysics;
         cameraController = GetComponent<PlayerCameraController>();
+        deathCollision = null;
+        deathText = GameObject.Find("DeathText").GetComponent<Text>();
 
     }
 
@@ -83,6 +87,7 @@ public class AndyController : MonoBehaviour {
         Time.timeScale = 1;
         _lineRenderer.enabled = false;
         intGravity = gravity;
+        deathText.enabled = false;
 
     }
 
@@ -135,7 +140,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("GravityFlip") /*&& energyBar.fillAmount >= gravSubtract*/) {
+        if (Input.GetButtonDown("GravityFlip") && energyBar.fillAmount >= gravSubtract) {
 
             gravityToggle = !gravityToggle;
             energyBar.fillAmount -= gravSubtract;
@@ -148,7 +153,7 @@ public class AndyController : MonoBehaviour {
             }
 
             if (gravityToggle == true) {
-
+                
                 //Physics.gravity = new Vector3(0, 19.62f, 0);
                 this.gravityModifier *= -1 / Time.timeScale;
                 transform.Rotate(0, 180, 180, Space.Self);
@@ -217,7 +222,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        //if (Input.GetButtonDown("Teleport") /*&& energyBar.fillAmount >= teleSubtract*/) {
+        if (Input.GetButtonDown("Teleport") /*&& energyBar.fillAmount >= teleSubtract*/) {
 
         //    teleportToggle = !teleportToggle;
 
@@ -233,7 +238,7 @@ public class AndyController : MonoBehaviour {
 
         //    }
 
-        //}
+        }
 
         //Teleport();
 
@@ -321,8 +326,7 @@ public class AndyController : MonoBehaviour {
 
     }
 
-    //void Teleport()
-    //{
+    void Teleport() {
 
     //    RaycastHit mouseHit;
 
@@ -382,7 +386,7 @@ public class AndyController : MonoBehaviour {
              
     //    }
 
-    //}
+    }
 
     IEnumerator EnergyFill() {
 
@@ -407,6 +411,35 @@ public class AndyController : MonoBehaviour {
         }
 
         drainCalledOnce = false;
+
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+
+        deathCollision = collision.gameObject.GetComponent<DeathCollision>();
+
+        if (deathCollision != null) {
+
+            if (deathCollision.hazardType == DeathCollision.HAZARDTYPE.LaserWall) {
+
+                //play death animation for this type
+
+                //display death UI
+                deathText.enabled = true;
+
+                //move player back to last checkpoint or start
+
+            } else if (deathCollision.hazardType == DeathCollision.HAZARDTYPE.FanBlades) {
+
+                //play death animation for this type
+
+                //display death UI
+
+                //move player back to last checkpoint or start
+
+            }
+
+        }
 
     }
 

@@ -12,6 +12,8 @@ public class PhysicsObject : MonoBehaviour
     [Tooltip("The speed at which to rotate")]
     public float rotationSpeed;
 
+    public bool useGravity;
+
     private Rigidbody _rigidbody;
 
     // Start is called before the first frame update
@@ -28,7 +30,8 @@ public class PhysicsObject : MonoBehaviour
     void Update()
     {
 
-        _rigidbody.velocity = new Vector3(0, quantumPhysics.gravityModifier * quantumPhysics.gravity);
+        if(useGravity == false)
+            _rigidbody.velocity = new Vector3(0, quantumPhysics.gravityModifier * quantumPhysics.gravity);
 
         _rigidbody.velocity *= quantumPhysics.timeModifier;
         _rigidbody.angularVelocity = new Vector3(0, 0, rotationSpeed * quantumPhysics.timeModifier);
