@@ -95,20 +95,7 @@ public class AndyController : MonoBehaviour {
     void Update()
     {
 
-        _animator.SetFloat("Speed", Input.GetAxis("Horizontal"));
-
-        if (_animator.GetFloat("Speed") == 0) {
-
-            _animator.SetBool("Idle", true);
-
-        } else {
-
-            _animator.SetBool("Idle", false);
-
-        }
-
-        //Movement();
-        //_lineRenderer.SetPosition(0, this.transform.position);
+        SetAnimParams();
 
         if (IsGrounded()) {
 
@@ -439,6 +426,22 @@ public class AndyController : MonoBehaviour {
                 //move player back to last checkpoint or start
 
             }
+
+        }
+
+    }
+
+    void SetAnimParams() {
+
+        _animator.SetFloat("Speed", Input.GetAxis("Horizontal"));
+
+        if (_animator.GetFloat("Speed") == 0) {
+
+            _animator.SetBool("Idle", true);
+
+        } else {
+
+            _animator.SetBool("Idle", false);
 
         }
 
