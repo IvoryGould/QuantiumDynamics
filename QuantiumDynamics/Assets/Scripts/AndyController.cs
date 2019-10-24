@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
-[RequireComponent(typeof(LineRenderer))]
+//[RequireComponent(typeof(LineRenderer))]
 public class AndyController : MonoBehaviour {
 
     Rigidbody _rigidbody; //players member rigidbody
-    LineRenderer _lineRenderer; //players member linerenderer
+    //LineRenderer _lineRenderer; //players member linerenderer
     Animator _animator;
+    DeathCollision deathCollision;
+    GameObject deathPanel;
 
     [Header("Generic")]
     [Tooltip("The holographic render of the character for teleport feedback")]
@@ -67,10 +69,12 @@ public class AndyController : MonoBehaviour {
     {
 
         _rigidbody = GetComponent<Rigidbody>();
-        _lineRenderer = GetComponent<LineRenderer>();
+        //_lineRenderer = GetComponent<LineRenderer>();
         _animator = GetComponent<Animator>();
         quantumPhysics = Resources.Load("QuantumPhysics") as QuantumPhysics;
         cameraController = GetComponent<PlayerCameraController>();
+        deathCollision = null;
+        deathPanel = GameObject.Find("DeathPanel");
 
     }
 
@@ -81,8 +85,9 @@ public class AndyController : MonoBehaviour {
         quantumPhysics.timeModifier = 1;
         distToGround = GetComponent<CapsuleCollider>().bounds.extents.y;
         Time.timeScale = 1;
-        _lineRenderer.enabled = false;
+        //_lineRenderer.enabled = false;
         intGravity = gravity;
+        deathPanel.SetActive(false);
 
     }
 
@@ -103,7 +108,7 @@ public class AndyController : MonoBehaviour {
         }
 
         //Movement();
-        _lineRenderer.SetPosition(0, this.transform.position);
+        //_lineRenderer.SetPosition(0, this.transform.position);
 
         if (IsGrounded()) {
 
@@ -135,7 +140,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("GravityFlip") /*&& energyBar.fillAmount >= gravSubtract*/) {
+        if (Input.GetButtonDown("GravityFlip") && energyBar.fillAmount >= gravSubtract) {
 
             gravityToggle = !gravityToggle;
             energyBar.fillAmount -= gravSubtract;
@@ -148,7 +153,7 @@ public class AndyController : MonoBehaviour {
             }
 
             if (gravityToggle == true) {
-
+                
                 //Physics.gravity = new Vector3(0, 19.62f, 0);
                 this.gravityModifier *= -1 / Time.timeScale;
                 transform.Rotate(0, 180, 180, Space.Self);
@@ -217,7 +222,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        //if (Input.GetButtonDown("Teleport") /*&& energyBar.fillAmount >= teleSubtract*/) {
+        if (Input.GetButtonDown("Teleport") /*&& energyBar.fillAmount >= teleSubtract*/) {
 
         //    teleportToggle = !teleportToggle;
 
@@ -233,7 +238,7 @@ public class AndyController : MonoBehaviour {
 
         //    }
 
-        //}
+        }
 
         //Teleport();
 
@@ -321,8 +326,7 @@ public class AndyController : MonoBehaviour {
 
     }
 
-    //void Teleport()
-    //{
+    void Teleport() {
 
     //    RaycastHit mouseHit;
 
@@ -382,7 +386,7 @@ public class AndyController : MonoBehaviour {
              
     //    }
 
-    //}
+    }
 
     IEnumerator EnergyFill() {
 
@@ -407,6 +411,36 @@ public class AndyController : MonoBehaviour {
         }
 
         drainCalledOnce = false;
+
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+
+        deathCollision = collision.gameObject.GetComponent<DeathCollision>();
+
+        if (deathCollision != null) {
+
+            if (deathCollision.hazardType == DeathCollision.HAZARDTYPE.LaserWall) {
+
+                //play death animation for this type
+
+                //display death UI
+                deathPanel.SetActive(true);
+                Time.timeScale = 0;
+
+                //move player back to last checkpoint or start
+
+            } else if (deathCollision.hazardType == DeathCollision.HAZARDTYPE.FanBlades) {
+
+                //play death animation for this type
+
+                //display death UI
+
+                //move player back to last checkpoint or start
+
+            }
+
+        }
 
     }
 
