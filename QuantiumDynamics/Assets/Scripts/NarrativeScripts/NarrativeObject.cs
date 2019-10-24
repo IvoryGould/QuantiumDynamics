@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class NarrativeObject : MonoBehaviour
 {
     public enum Type
@@ -28,9 +29,12 @@ public class NarrativeObject : MonoBehaviour
     private NarrativeManager narrativeManager;
     private GameObject player;
     private Collider playerCol;
+    [SerializeField]
+    private TextMeshProUGUI prompt;
     // Start is called before the first frame update
     void Start()
     {
+        prompt.text = "";
         if(narrativeManager==null)
         {
             narrativeManager = FindObjectOfType<NarrativeManager>();
@@ -113,6 +117,13 @@ public class NarrativeObject : MonoBehaviour
                 PickedUp();
                 Destroy(this.gameObject);
                 break;
+            case Type.Terminal:
+                prompt.text = "Press 'F' to interact";
+                break;
         }
+    }
+    public void OnTriggerExit(Collider playerCol)
+    {
+        prompt.text = "";
     }
 }

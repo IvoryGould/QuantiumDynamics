@@ -18,6 +18,12 @@ public class AudioOptions : MonoBehaviour
     private Slider sFXSlider;
     [SerializeField]
     private Slider masterSlider;
+    [SerializeField]
+    private AudioSource clean;
+    [SerializeField]
+    private AudioSource action;
+    [SerializeField]
+    private AudioSource intro;
     void Awake()
     {
         //If it exists already, delete the new instance
@@ -40,7 +46,8 @@ public class AudioOptions : MonoBehaviour
         SetMusic(musicSlider.value);
         SetMaster(masterSlider.value);
         SetSFX(sFXSlider.value);
-        
+        clean.PlayDelayed(intro.clip.length);
+        action.PlayDelayed(intro.clip.length);
     }
 
     // Update is called once per frame
