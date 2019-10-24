@@ -13,7 +13,7 @@ public class AndyController : MonoBehaviour {
     //LineRenderer _lineRenderer; //players member linerenderer
     Animator _animator;
     DeathCollision deathCollision;
-    Text deathText;
+    GameObject deathPanel;
 
     [Header("Generic")]
     [Tooltip("The holographic render of the character for teleport feedback")]
@@ -74,7 +74,7 @@ public class AndyController : MonoBehaviour {
         quantumPhysics = Resources.Load("QuantumPhysics") as QuantumPhysics;
         cameraController = GetComponent<PlayerCameraController>();
         deathCollision = null;
-        deathText = GameObject.Find("DeathText").GetComponent<Text>();
+        deathPanel = GameObject.Find("DeathPanel");
 
     }
 
@@ -87,7 +87,7 @@ public class AndyController : MonoBehaviour {
         Time.timeScale = 1;
         //_lineRenderer.enabled = false;
         intGravity = gravity;
-        deathText.enabled = false;
+        deathPanel.SetActive(false);
 
     }
 
@@ -425,7 +425,8 @@ public class AndyController : MonoBehaviour {
                 //play death animation for this type
 
                 //display death UI
-                deathText.enabled = true;
+                deathPanel.SetActive(true);
+                Time.timeScale = 0;
 
                 //move player back to last checkpoint or start
 
