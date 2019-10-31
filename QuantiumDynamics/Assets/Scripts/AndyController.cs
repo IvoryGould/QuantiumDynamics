@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(CapsuleCollider))]
+[RequireComponent(typeof(BoxCollider))]
 //[RequireComponent(typeof(LineRenderer))]
 public class AndyController : MonoBehaviour {
 
@@ -24,12 +24,14 @@ public class AndyController : MonoBehaviour {
     public Image energyBar;
     [Tooltip("How much energy to remove when gravity flipping")]
     public float gravSubtract;
-    [Tooltip("How much energy to remove when slowing time")]
-    public float slowSubtract;
-    [Tooltip("How much energy to remove when stopping time")]   
-    public float stopSubtract;
-    [Tooltip("How much energy to remove when teleporting")]
-    public float teleSubtract;
+    [Tooltip("How much energy to Drain per drain tick")]
+    public float drainAmount;
+    [Tooltip("How much time between drain ticks")]
+    public float drainTickTime;
+    [Tooltip("How much the energy bar is to refill each tick")]   
+    public float refillAmount;
+    [Tooltip("How much time between refill ticks")]
+    public float fillTickTime;
 
     [Header("Player Physics")]
     [Tooltip("Maximum Height the player can jump above its self")]
@@ -83,7 +85,7 @@ public class AndyController : MonoBehaviour {
     {
 
         quantumPhysics.timeModifier = 1;
-        distToGround = GetComponent<CapsuleCollider>().bounds.extents.y;
+        distToGround = GetComponent<BoxCollider>().bounds.extents.y;
         Time.timeScale = 1;
         //_lineRenderer.enabled = false;
         intGravity = gravity;
@@ -104,7 +106,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (timeToggle || stopTimeToggle && drainCalledOnce == false) {
+        if (timeToggle && drainCalledOnce == false) {
 
             drainCalledOnce = true;
             StopCoroutine(EnergyFill());
@@ -127,12 +129,12 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("GravityFlip") && energyBar.fillAmount >= gravSubtract) {
+        if (Input.GetMouseButtonDown(0) && energyBar.fillAmount >= gravSubtract) {
 
             gravityToggle = !gravityToggle;
             energyBar.fillAmount -= gravSubtract;
 
-            if (fillCalledOnce == false) {
+            if (fillCalledOnce == false && drainCalledOnce == false) {
 
                 fillCalledOnce = true;
                 StartCoroutine(EnergyFill());
@@ -159,7 +161,7 @@ public class AndyController : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("TimeScaleSlow") && !stopTimeToggle) {
+        if (Input.GetMouseButtonDown(1) || energyBar.fillAmount == 0 && timeToggle == true) {
 
             timeToggle = !timeToggle;
 
@@ -171,10 +173,10 @@ public class AndyController : MonoBehaviour {
 
             }
 
-            if (timeToggle == true /*&& energyBar.fillAmount >= slowSubtract*/) {
+            if (timeToggle == true) {
 
                 quantumPhysics.timeModifier = 0.2f;
-                energyBar.fillAmount -= slowSubtract;
+                //energyBar.fillAmount -= slowSubtract;
 
             } else {
 
@@ -188,24 +190,24 @@ public class AndyController : MonoBehaviour {
 
         if (Input.GetButtonDown("TimeScaleStop") /*&& energyBar.fillAmount >= stopSubtract*/) {
 
-            stopTimeToggle = !stopTimeToggle;
-            timeToggle = false;
+            //stopTimeToggle = !stopTimeToggle;
+            //timeToggle = false;
 
-            energyBar.fillAmount -= stopSubtract;
+            //energyBar.fillAmount -= stopSubtract;
 
-            if (fillCalledOnce == false) {
+            //if (fillCalledOnce == false) {
 
-                fillCalledOnce = true;
-                StartCoroutine(EnergyFill());
+            //    fillCalledOnce = true;
+            //    StartCoroutine(EnergyFill());
 
-            }
+            //}
 
-            if (stopTimeToggle == true)
-                quantumPhysics.timeModifier = 0;
+            //if (stopTimeToggle == true)
+            //    quantumPhysics.timeModifier = 0;
             //Time.timeScale = 0;
-            else
-                quantumPhysics.timeModifier = 1;
-                //Time.timeScale = 1;
+            //else
+            //    quantumPhysics.timeModifier = 1;
+            //Time.timeScale = 1;
 
         }
 
@@ -377,10 +379,22 @@ public class AndyController : MonoBehaviour {
 
     IEnumerator EnergyFill() {
 
-        while (energyBar.fillAmount != 1) {
+        while (energyBar.fillAmount != 1 && timeToggle == false) {
 
-            yield return new WaitForSeconds(1);
-            energyBar.fillAmount += 0.1f;
+            if (timeToggle == true) {
+
+                break;
+
+            }
+
+            yield return new WaitForSeconds(fillTickTime);
+            energyBar.fillAmount += refillAmount;
+
+            if (timeToggle == true) {
+
+                break;
+
+            }
 
         }
 
@@ -390,10 +404,10 @@ public class AndyController : MonoBehaviour {
 
     IEnumerator EnergyDrain() {
 
-        while (timeToggle || stopTimeToggle) {
+        while (timeToggle) {
 
-            yield return new WaitForSeconds(0.5f);
-            energyBar.fillAmount -= 0.02f;
+            yield return new WaitForSeconds(drainTickTime);
+            energyBar.fillAmount -= drainAmount;
 
         }
 
