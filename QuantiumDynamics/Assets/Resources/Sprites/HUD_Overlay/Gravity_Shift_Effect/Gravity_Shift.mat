@@ -227,7 +227,7 @@ Material:
     - _ZTestModeDistortion: 8
     - _ZWrite: 1
     m_Colors:
-    - Color_90961D42: {r: 0, g: 0.4620726, b: 1, a: 0}
+    - Color_90961D42: {r: 0, g: 1.3314528, b: 24.251463, a: 0}
     - Vector2_5595BE0: {r: 0, g: -2, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
