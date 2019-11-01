@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MenuButtons : MonoBehaviour
 {
@@ -22,9 +23,13 @@ public class MenuButtons : MonoBehaviour
     private GameObject terminalsMenu;
     [SerializeField]
     private GameObject itemsMenu;
+    private GameObject journalBox;
+    private TextMeshProUGUI journalBoxTxt;
     // Start is called before the first frame update
     void Start()
     {
+	journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+        journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
         audioMenu.SetActive(false);
@@ -69,6 +74,7 @@ public class MenuButtons : MonoBehaviour
             terminalsMenu.SetActive(false);
             scroll.SetActive(false);
             journal.SetActive(true);
+	    journalBoxTxt.text = "";
         }
         else
         {
