@@ -116,6 +116,7 @@ public class NarrativeObject : MonoBehaviour
             case Type.Log:
                 PickedUp();
                 Destroy(this.gameObject);
+		prompt.text = "Picked up " + this.name;
                 break;
             case Type.Terminal:
                 prompt.text = "Press 'F' to interact";

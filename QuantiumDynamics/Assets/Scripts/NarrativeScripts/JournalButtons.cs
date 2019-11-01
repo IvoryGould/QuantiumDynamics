@@ -11,7 +11,11 @@ public class JournalButtons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         narrativeManager = GetComponent<NarrativeManager>();
+        journalBox = GameObject.FindGameObjectWithTag("JournalBox");
+        journalBoxTxt = journalBox.GetComponent<TextMeshProUGUI>();
+        journalBoxTxt.text = "";
     }
 
     // Update is called once per frame
