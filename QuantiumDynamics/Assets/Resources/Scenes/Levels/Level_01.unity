@@ -5936,18 +5936,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 360082325}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &367843100 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7653241781949743443, guid: cd378c22a7290d04b82ee89cbdef1ab7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1793007435}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &375658983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12774,7 +12762,7 @@ PrefabInstance:
     - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
       propertyPath: energyBar
       value: 
-      objectReference: {fileID: 367843100}
+      objectReference: {fileID: 0}
     - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
       propertyPath: jumpForce
       value: 14
@@ -48674,11 +48662,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7342491738913057790}
     m_Modifications:
-    - target: {fileID: 8140309261679612741, guid: 26747774630defb45a4b9021fae9cac2,
-        type: 3}
-      propertyPath: m_Name
-      value: ENV_Crate_01_red (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 8140309261679612738, guid: 26747774630defb45a4b9021fae9cac2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48733,6 +48716,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140309261679612741, guid: 26747774630defb45a4b9021fae9cac2,
+        type: 3}
+      propertyPath: m_Name
+      value: ENV_Crate_01_red (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26747774630defb45a4b9021fae9cac2, type: 3}
@@ -52705,11 +52693,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7342491738913057790}
     m_Modifications:
-    - target: {fileID: 6150509803094252139, guid: cc26fda1891c7ed4daef67e31044a8bc,
-        type: 3}
-      propertyPath: m_Name
-      value: ENV_Crate_01_blue (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6150509803094252140, guid: cc26fda1891c7ed4daef67e31044a8bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52764,6 +52747,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150509803094252139, guid: cc26fda1891c7ed4daef67e31044a8bc,
+        type: 3}
+      propertyPath: m_Name
+      value: ENV_Crate_01_blue (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc26fda1891c7ed4daef67e31044a8bc, type: 3}
