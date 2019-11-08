@@ -231,7 +231,7 @@ Material:
     - _ZTestModeDistortion: 8
     - _ZWrite: 1
     m_Colors:
-    - Color_7B63BF7B: {r: 205.51157, g: 3.2279305, b: 22.595514, a: 0}
+    - Color_7B63BF7B: {r: 27.53272, g: 0.5766015, b: 3.171308, a: 0}
     - Vector2_35F03098: {r: -0.6, g: -0.6, b: 0, a: 0}
     - Vector2_8A79DC2F: {r: -0.3, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
