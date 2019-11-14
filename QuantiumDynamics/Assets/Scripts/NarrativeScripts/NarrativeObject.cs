@@ -98,11 +98,26 @@ public class NarrativeObject : MonoBehaviour
         switch (type)
         {
             case Type.Terminal:
-                if (Input.GetButtonDown("Interact"))
                 {
-                    PickedUp();
+                    switch (terminal)
+                    {
+                        case Terminal.Entry:
+                            {
+                                prompt.text = narrativeManager.entryJourn;
+                            }
+                            break;
+                        case Terminal.GravFlip:
+                            {
+                                prompt.text = narrativeManager.gravActJourn;
+                            }
+                            break;
+                    }
+                    /*if (Input.GetButtonDown("Interact"))
+                    {
+                        PickedUp();
+                    }*/
+                    break;
                 }
-                break;
         }
     }
     public void OnTriggerEnter(Collider playerCol)

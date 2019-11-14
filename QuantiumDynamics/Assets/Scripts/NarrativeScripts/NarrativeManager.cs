@@ -65,7 +65,7 @@ public class NarrativeManager : MonoBehaviour
         logs = new List<bool>();
 
         terminals.Add(entry);
-        entryJourn = "Test 487. \n\nGravity test 128 \n\nThis test will see how effective you are at navigating by flipping your gavity (X).";
+        entryJourn = "Test 487. \n\nGravity test 128 \n\nThis test will see how effective you are at navigating by flipping your gavity (Left Click).";
         terminals.Add(gravAct);
         gravActJourn = "The lasers in front of you will kill you...as will any others.";
         terminals.Add(end);
