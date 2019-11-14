@@ -55,6 +55,7 @@ public class AndyController : MonoBehaviour {
     private float intialPlayerPos; //storage of the players position for jumping
     private QuantumPhysics quantumPhysics;
     private PlayerCameraController cameraController;
+    private bool spinCalledOnce;
 
     float distToGround;
     float intGravity;
@@ -257,6 +258,16 @@ public class AndyController : MonoBehaviour {
     {
 
         float translation = Input.GetAxis("Horizontal") * speed;
+
+        if (spinCalledOnce == true && transform.eulerAngles.y == 180 && !(translation > 0)) {
+
+            spinCalledOnce = false;
+
+        } else if (spinCalledOnce == true && transform.eulerAngles.y == 0 && !(translation < 0)) {
+
+            spinCalledOnce = false;
+
+        }
         
         //translation *= Time.deltaTime;
 
@@ -268,17 +279,45 @@ public class AndyController : MonoBehaviour {
 
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
 
+            if (spinCalledOnce == false) {
+
+                spinCalledOnce = true;
+                _animator.SetTrigger("Spin");
+
+            }
+
         } else if (translation < 0 && !gravityToggle) {
 
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+
+            if (spinCalledOnce == false) {
+
+                spinCalledOnce = true;
+                _animator.SetTrigger("Spin");
+
+            }
 
         } else if (translation > 0 && gravityToggle) {
 
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
 
+            if (spinCalledOnce == false) {
+
+                spinCalledOnce = true;
+                _animator.SetTrigger("Spin");
+
+            }
+
         } else if (translation < 0 && gravityToggle) {
 
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
+
+            if (spinCalledOnce == false) {
+
+                spinCalledOnce = true;
+                _animator.SetTrigger("Spin");
+
+            }
 
         }
 
@@ -448,6 +487,7 @@ public class AndyController : MonoBehaviour {
     void SetAnimParams() {
 
         _animator.SetFloat("Speed", Input.GetAxis("Horizontal"));
+        _animator.SetBool("Grounded", IsGrounded());
 
         if (_animator.GetFloat("Speed") == 0) {
 

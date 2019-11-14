@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32123852, g: 0.4659641, b: 0.7735838, a: 1}
+  m_IndirectSpecularColor: {r: 0.32123113, g: 0.46596974, b: 0.77357644, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,7 +131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &121719303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,11 +1044,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGlobal: 1
+  isGlobal: 0
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: dab0766de4a4b5349b80ce1a86555414, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!4 &1065808856
 Transform:
   m_ObjectHideFlags: 0
@@ -1813,7 +1813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &2075976237
 Light:
   m_ObjectHideFlags: 0
@@ -1824,13 +1824,13 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 3.1415927
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1845,7 +1845,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
-  m_LightShadowCasterMode: 2
+  m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -1884,15 +1884,15 @@ MonoBehaviour:
   volumetricShadowDimmer: 1
   shadowFadeDistance: 10000
   contactShadows: 0
-  viewBiasMin: 0.2
-  viewBiasMax: 100
+  viewBiasMin: 0.5
+  viewBiasMax: 10
   viewBiasScale: 1
-  normalBiasMin: 0.5
-  normalBiasMax: 0.5
+  normalBiasMin: 0.2
+  normalBiasMax: 4
   normalBiasScale: 1
-  sampleBiasScale: 0
-  edgeLeakFixup: 1
-  edgeToleranceNormal: 1
+  sampleBiasScale: 1
+  edgeLeakFixup: 0
+  edgeToleranceNormal: 0
   edgeTolerance: 1
   shadowCascadeCount: 4
   shadowCascadeRatios:
@@ -1952,10 +1952,10 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 3.1415927
+  displayLightIntensity: 0
   displayAreaLightEmissiveMesh: 0
   lightLayers: 1
-  shadowNearPlane: 0.1
+  shadowNearPlane: 0.0001
   shadowSoftness: 0.5
   blockerSampleCount: 24
   filterSampleCount: 32
@@ -1978,7 +1978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2111232834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2143,7 +2143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2127996315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2374,11 +2374,38 @@ PrefabInstance:
       propertyPath: gravSubtract
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: drainAmount
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: drainTickTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: refillAmount
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487594247, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
+      propertyPath: fillTickTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1487594249, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
       propertyPath: m_Height
       value: 2.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7498239382852691635, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498239382852691635, guid: ed59b30513d864c4d94d4f77ad644191,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1816680975, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ed59b30513d864c4d94d4f77ad644191, type: 3}
 --- !u!1001 &2848625737816553098
 PrefabInstance:
