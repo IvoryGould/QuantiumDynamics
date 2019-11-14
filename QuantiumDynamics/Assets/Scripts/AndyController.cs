@@ -20,8 +20,6 @@ public class AndyController : MonoBehaviour {
     public GameObject AndyGhost;
 
     [Header("EnergyBar")]
-    [Tooltip("Energy Bar image for accessing the fill property")]
-    public Image energyBar;
     [Tooltip("How much energy to remove when gravity flipping")]
     public float gravSubtract;
     [Tooltip("How much energy to Drain per drain tick")]
@@ -46,6 +44,14 @@ public class AndyController : MonoBehaviour {
     public float jumpForce = 7.5f;
     [Tooltip("Non-physics layer for raycasting")]
     public LayerMask layerMask;
+
+    [Header("UI Items")]
+    public GameObject hudBase;
+    public GameObject timeIcon;
+    public GameObject gravIcon;
+    [Tooltip("Energy Bar image for accessing the fill property")]
+    public Image energyBar;
+
 
     private bool calledOnce;
     private bool isJumping; //check to see if the player is jumping
@@ -149,6 +155,7 @@ public class AndyController : MonoBehaviour {
                 transform.Rotate(0, 180, 180, Space.Self);
                 transform.position = new Vector3(transform.position.x, transform.position.y + 2.5f, transform.position.z);
                 cameraController.CameraOffset.y *= -1;
+                gravIcon.GetComponent<CanvasRenderer>().GetMaterial().SetFloat("Vector1_77CCC2E3", 0);
 
             } else {
 
@@ -157,6 +164,7 @@ public class AndyController : MonoBehaviour {
                 transform.Rotate(0, 180, 180, Space.Self);
                 transform.position = new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z);
                 cameraController.CameraOffset.y *= -1;
+                gravIcon.GetComponent<CanvasRenderer>().GetMaterial().SetFloat("Vector1_77CCC2E3", 180);
 
             }
 
@@ -178,10 +186,12 @@ public class AndyController : MonoBehaviour {
 
                 quantumPhysics.timeModifier = 0.2f;
                 //energyBar.fillAmount -= slowSubtract;
+                timeIcon.GetComponent<CanvasRenderer>().GetMaterial().SetFloat("Vector1_39BDCCC2", 2);
 
             } else {
 
                 quantumPhysics.timeModifier = 1;
+                timeIcon.GetComponent<CanvasRenderer>().GetMaterial().SetFloat("Vector1_39BDCCC2", 1);
 
             }
 
